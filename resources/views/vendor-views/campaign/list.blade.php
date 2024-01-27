@@ -13,7 +13,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/campaign.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/campaign.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                     {{translate('messages.campaign_list')}}<span class="badge badge-soft-dark ml-2" id="itemCount">{{$campaigns->total()}}</span>
@@ -66,7 +66,7 @@
                             </td>
                             <td>
                                 <div class="overflow-hidden">
-                                    <img class="img--vertical max--200 mw--200" src="{{asset('storage/app/public/campaign')}}/{{$campaign['image']}}"onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'">
+                                    <img class="img--vertical max--200 mw--200" src="{{asset('storage/campaign')}}/{{$campaign['image']}}"onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'">
                                 </div>
                             </td>
                             <td>
@@ -140,7 +140,7 @@
                 </table>
                 @if(count($campaigns) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                    <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>

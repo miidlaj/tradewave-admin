@@ -11,8 +11,8 @@
         @php($logo=\App\Models\BusinessSetting::where('key','logo')->first()->value)
         <img
             width="200"
-            src="{{asset('storage/app/public/restaurant/'.$logo)}}"
-            onerror="this.src='{{ asset('public/assets/admin/img/img1.jpg') }}'"
+            src="{{asset('storage/restaurant/'.$logo)}}"
+            onerror="this.src='{{ asset('assets/admin/img/img1.jpg') }}'"
             alt=""
             class="dark-support"
         />

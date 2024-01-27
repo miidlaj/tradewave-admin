@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="{{ asset('public/assets/admin/css/tags-input.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/admin/css/tags-input.min.css') }}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -16,7 +16,7 @@
         <div class="page-header d-flex flex-wrap __gap-15px justify-content-between align-items-center">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{ asset('public/assets/admin/img/edit.png') }}" class="w--22" alt="">
+                    <img src="{{ asset('assets/admin/img/edit.png') }}" class="w--22" alt="">
                 </span>
                 <span>
                     {{ request()->product_gellary  == 1 ?  translate('Add_item') : translate('item_update') }}
@@ -162,8 +162,8 @@
                                         @foreach($product->images as $key => $photo)
                                             <div id="product_images_{{ $key }}" class="spartan_item_wrapper min-w-100px max-w-100px">
                                                 <img class="img--square"
-                                                    src="{{ asset("storage/app/public/product/$photo") }}"
-                                                    onerror="this.src='{{ asset('public/assets/admin/img/upload.png') }}'"
+                                                    src="{{ asset("storage/product/$photo") }}"
+                                                    onerror="this.src='{{ asset('assets/admin/img/upload.png') }}'"
                                                     alt="Product image">
                                                     @if (request()->product_gellary  == 1)
                                                         <a href="#" onclick="function_remove_img({{ $key }},'{{ $photo }}')"
@@ -183,8 +183,8 @@
                                     </label>
                                     <label class="d-inline-block m-0">
                                         <img class="img--100" id="viewer"
-                                            src="{{ asset('storage/app/public/product') }}/{{ $product['image'] }}"
-                                            onerror="this.src='{{ asset('public/assets/admin/img/upload.png') }}'"
+                                            src="{{ asset('storage/product') }}/{{ $product['image'] }}"
+                                            onerror="this.src='{{ asset('assets/admin/img/upload.png') }}'"
                                             alt="thumbnail" />
                                         <input type="file" name="image" id="customFileEg1"
                                             class="custom-file-input d-none"
@@ -245,7 +245,7 @@
                                             for="exampleFormControlSelect1">{{ translate('messages.sub_category') }}<span
                                                 class="form-label-secondary" data-toggle="tooltip" data-placement="right"
                                                 data-original-title="{{ translate('messages.category_required_warning') }}"><img
-                                                    src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                    src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                     alt="{{ translate('messages.category_required_warning') }}"></span></label>
                                         <select name="sub_category_id" class="js-data-example-ajax form-control"
                                             id="sub-categories">
@@ -356,7 +356,7 @@
                                     for="exampleFormControlSelect1">{{ translate('messages.addon') }}<span
                                         class="form-label-secondary" data-toggle="tooltip" data-placement="right"
                                         data-original-title="{{ translate('messages.store_required_warning') }}"><img
-                                            src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                            src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                             alt="{{ translate('messages.store_required_warning') }}"></span></label>
                                 <select name="addon_ids[]" class="form-control js-select2-custom" multiple="multiple"
                                     id="add_on">
@@ -485,7 +485,7 @@
                                 @if (!isset($product->food_variations) || count(json_decode($product->food_variations,true))<1)
                                 <div id="empty-variation">
                                     <div class="text-center">
-                                        <img src="{{ asset('/public/assets/admin/img/variation.png') }}" alt="">
+                                        <img src="{{ asset('/assets/admin/img/variation.png') }}" alt="">
                                         <div>{{ translate('No variation added') }}</div>
                                     </div>
                                 </div>
@@ -789,7 +789,7 @@
 
     }
 </script>
-<script src="{{ asset('public/assets/admin') }}/js/tags-input.min.js"></script>
+<script src="{{ asset('assets/admin') }}/js/tags-input.min.js"></script>
 <script>
 
     function getStoreData(route, store_id, id) {
@@ -1206,7 +1206,7 @@
         $('input[name="current_stock"]').val(total_qty);
     });
 </script>
-<script src="{{ asset('public/assets/admin/js/spartan-multi-image-picker.js') }}"></script>
+<script src="{{ asset('assets/admin/js/spartan-multi-image-picker.js') }}"></script>
 <script type="text/javascript">
     $(function() {
         $("#coba").spartanMultiImagePicker({
@@ -1216,7 +1216,7 @@
             groupClassName: 'spartan_item_wrapper min-w-100px max-w-100px',
             maxFileSize: '',
             placeholderImage: {
-                image: "{{ asset('public/assets/admin/img/upload.png') }}",
+                image: "{{ asset('assets/admin/img/upload.png') }}",
                 width: '100px'
             },
             dropFileLabel: "Drop Here",
@@ -1258,7 +1258,7 @@
         $('#choice_attributes').val(null).trigger('change');
         $('#customer_choice_options').empty().trigger('change');
         $('#variant_combination').empty().trigger('change');
-        $('#viewer').attr('src', "{{ asset('public/assets/admin/img/upload.png') }}");
+        $('#viewer').attr('src', "{{ asset('assets/admin/img/upload.png') }}");
         $("#coba").empty().spartanMultiImagePicker({
             fieldName: 'item_images[]',
             maxCount: 6,
@@ -1266,7 +1266,7 @@
             groupClassName: 'spartan_item_wrapper min-w-100px max-w-100px',
             maxFileSize: '',
             placeholderImage: {
-                image: "{{ asset('public/assets/admin/img/upload.png') }}",
+                image: "{{ asset('assets/admin/img/upload.png') }}",
                 width: '100%'
             },
             dropFileLabel: "Drop Here",

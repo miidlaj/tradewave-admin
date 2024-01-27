@@ -11,7 +11,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/addon.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/addon.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('messages.addons_bulk_import')}}
@@ -59,8 +59,8 @@
                 <div class="text-center pb-4">
                     <h3 class="mb-3 export--template-title">{{ translate('messages.Download Spreadsheet Template') }}</h3>
                     <div class="btn--container justify-content-center export--template-btns">
-                        <a href="{{asset('public/assets/addons_bulk_format.xlsx')}}" download="" class="btn btn-dark">{{ translate('messages.Template with Existing Data') }}</a>
-                        <a href="{{asset('public/assets/addons_bulk_format_nodata.xlsx')}}" download="" class="btn btn-dark">{{ translate('messages.Template without Data') }}</a>
+                        <a href="{{asset('assets/addons_bulk_format.xlsx')}}" download="" class="btn btn-dark">{{ translate('messages.Template with Existing Data') }}</a>
+                        <a href="{{asset('assets/addons_bulk_format_nodata.xlsx')}}" download="" class="btn btn-dark">{{ translate('messages.Template without Data') }}</a>
                     </div>
                 </div>
             </div>

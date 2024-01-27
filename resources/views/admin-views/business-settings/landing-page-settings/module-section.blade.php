@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('public/assets/admin/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/admin/css/croppie.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -13,7 +13,7 @@
     <div class="page-header pb-0">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('public/assets/admin/img/landing.png')}}" class="w--26" alt="">
+                <img src="{{asset('assets/admin/img/landing.png')}}" class="w--26" alt="">
             </span>
             <span>
                 {{ translate('messages.landing_page_settings') }}
@@ -59,8 +59,8 @@
                                             </div>
 
                                             <center id="image-viewer-section-{{$key}}" class="pt-4">
-                                                <img class="img--120" id="viewer-{{$key}}" src="{{asset('public/assets/landing')}}/image/{{isset($module_value['img']) ? $module_value['img']:'double_screen_image.png'}}"
-                                                onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'" alt=""/>
+                                                <img class="img--120" id="viewer-{{$key}}" src="{{asset('assets/landing')}}/image/{{isset($module_value['img']) ? $module_value['img']:'double_screen_image.png'}}"
+                                                onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'" alt=""/>
                                             </center>
                                         </div>
                                     </div>
@@ -101,7 +101,7 @@
         });
 
         $('#reset_btn').click(function(){
-            $('#viewer-{{$key}}').attr('src','{{asset('public/assets/admin/img/400x400/img2.jpg')}}');
+            $('#viewer-{{$key}}').attr('src','{{asset('assets/admin/img/400x400/img2.jpg')}}');
         })
         @endforeach
 

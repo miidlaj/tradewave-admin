@@ -12,7 +12,7 @@
         <div class="page-header d-flex flex-wrap align-items-center justify-content-between">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/app.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/app.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                     {{translate('messages.login_page_setup')}}
@@ -38,7 +38,7 @@
                     <div class="row g-3">
                         <div class="col-md-12">
                             <h5 class="card-title mb-3">
-                                {{-- <img src="{{asset('/public/assets/admin/img/andriod.png')}}" class="mr-2" alt=""> --}}
+                                {{-- <img src="{{asset('/assets/admin/img/andriod.png')}}" class="mr-2" alt=""> --}}
                                 {{-- {{ translate('For_admin') }} --}}
                             </h5>
                             <input type="text" hidden  name="type" value="admin">
@@ -78,7 +78,7 @@
                     <div class="row g-3">
                         <div class="col-md-12">
                             <h5 class="card-title mb-3">
-                                {{-- <img src="{{asset('/public/assets/admin/img/andriod.png')}}" class="mr-2" alt=""> --}}
+                                {{-- <img src="{{asset('/assets/admin/img/andriod.png')}}" class="mr-2" alt=""> --}}
                                 {{-- {{ translate('For_admin_employee') }} --}}
                             </h5>
                             <input type="text" hidden  name="type" value="admin_employee">
@@ -119,7 +119,7 @@
                     <div class="row g-3">
                         <div class="col-md-12">
                             <h5 class="card-title mb-3">
-                                {{-- <img src="{{asset('/public/assets/admin/img/andriod.png')}}" class="mr-2" alt=""> --}}
+                                {{-- <img src="{{asset('/assets/admin/img/andriod.png')}}" class="mr-2" alt=""> --}}
                                 {{-- {{ translate('For_stores') }} --}}
                             </h5>
                             <input type="text" hidden  name="type" value="store">
@@ -159,7 +159,7 @@
                     <div class="row g-3">
                         <div class="col-md-12">
                             <h5 class="card-title mb-3">
-                                {{-- <img src="{{asset('/public/assets/admin/img/andriod.png')}}" class="mr-2" alt=""> --}}
+                                {{-- <img src="{{asset('/assets/admin/img/andriod.png')}}" class="mr-2" alt=""> --}}
                                 {{-- {{ translate('For_store_employee') }} --}}
                             </h5>
                             <input type="text" hidden  name="type" value="store_employee">
@@ -208,7 +208,7 @@
                         <div class="item">
                             <div class="mb-20">
                                 <div class="text-center">
-                                    <img src="{{asset('/public/assets/admin/img/app.png')}}" alt="" class="mb-20">
+                                    <img src="{{asset('/assets/admin/img/app.png')}}" alt="" class="mb-20">
                                     <h5 class="modal-title">{{translate('What is App Version ?')}}</h5>
                                 </div>
                                 <ul>
@@ -224,7 +224,7 @@
                         <div class="item">
                             <div class="mb-20">
                                 <div class="text-center">
-                                    <img src="{{asset('/public/assets/admin/img/app.png')}}" alt="" class="mb-20">
+                                    <img src="{{asset('/assets/admin/img/app.png')}}" alt="" class="mb-20">
                                     <h5 class="modal-title">{{translate('App Download Link')}}</h5>
                                 </div>
                                 <ul>

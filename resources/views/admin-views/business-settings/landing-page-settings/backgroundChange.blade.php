@@ -2,7 +2,7 @@
 @section('title', translate('messages.landing_page_settings'))
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{ asset('public/assets/admin/css/croppie.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/admin/css/croppie.css') }}" rel="stylesheet">
 @endpush
 @section('content')
     <div class="content container-fluid">
@@ -10,7 +10,7 @@
         <div class="page-header pb-0">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/landing.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/landing.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                     {{ translate('messages.landing_page_settings') }}

@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/notification.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/notification.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                     {{translate('messages.notification_update')}}
@@ -71,7 +71,7 @@
                                 </label>
                                 <center class="py-3 my-auto">
                                     <img class="img--vertical" id="viewer"
-                                        src="{{asset('storage/app/public/notification')}}/{{$notification['image']}}"  onerror="src='{{asset('public/assets/admin/img/900x400/img1.jpg')}}'" alt="image"/>
+                                        src="{{asset('storage/notification')}}/{{$notification['image']}}"  onerror="src='{{asset('assets/admin/img/900x400/img1.jpg')}}'" alt="image"/>
                                 </center>
                                 <div class="custom-file">
                                     <input type="file" name="image" id="customFileEg1" class="custom-file-input"
@@ -114,7 +114,7 @@
         <script>
             $('#reset_btn').click(function(){
                 $('#zone').val("{{$notification->zone_id}}").trigger('change');
-                $('#viewer').attr('src', "{{asset('storage/app/public/notification')}}/{{$notification['image']}}");
+                $('#viewer').attr('src', "{{asset('storage/notification')}}/{{$notification['image']}}");
             })
         </script>
 @endpush

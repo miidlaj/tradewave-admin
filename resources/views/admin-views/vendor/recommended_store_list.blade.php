@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/condition.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/condition.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                     {{translate('messages.Recommended_stores')}}
@@ -116,8 +116,8 @@
                                     <td class="text-center">
                                         <div>
                                             <a href="{{route('admin.store.view', $store->id)}}" class="table-rest-info" alt="view store">
-                                            <img class="img--60 circle" onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
-                                                    src="{{asset('storage/app/public/store')}}/{{$store['logo']}}">
+                                            <img class="img--60 circle" onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                                                    src="{{asset('storage/store')}}/{{$store['logo']}}">
                                                 <div class="info"><div class="text--title">
                                                     {{Str::limit($store->name,20,'...')}}
                                                     </div>
@@ -175,7 +175,7 @@
                         </div>
                         @if(count($stores) === 0)
                         <div class="empty--data">
-                            <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                            <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                             <h5>
                                 {{translate('no_data_found')}}
                             </h5>

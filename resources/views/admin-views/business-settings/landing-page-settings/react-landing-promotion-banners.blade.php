@@ -8,7 +8,7 @@
         <div class="d-flex flex-wrap justify-content-between">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/landing.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/landing.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{ translate('messages.react_landing_page') }}
@@ -49,18 +49,18 @@
                                 <div>
                                     <label class="form-label d-block mb-3">
                                         {{translate('Banner')}}  <span class="text--primary">{{translate('(size: 2:1)')}}</span><span class="form-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('If_you_want_to_upload_one_banner_then_you_have_to_upload_it_in_2:1_ratio_otherwise_the_ratio_will_be_same_as_before.') }}">
-                                            <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="">
+                                            <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="">
                                         </span>
                                     </label>
                                     {{-- <label class="m-0 max-w-640">
                                         <div class="img">
-                                            <img src="{{asset('/public/assets/admin/img/upload-4.png')}}" class="vertical-img w-100 mw-100" alt="">
+                                            <img src="{{asset('/assets/admin/img/upload-4.png')}}" class="vertical-img w-100 mw-100" alt="">
                                         </div>
                                         <input type="file" name="image"  hidden>
                                     </label> --}}
                                     <label class="upload-img-3 d-block max-w-640">
                                         <div class="img">
-                                            <img src="" onerror="this.src='{{asset("/public/assets/admin/img/upload-4.png")}}'" class="vertical-img w-100 mw-100" alt="">
+                                            <img src="" onerror="this.src='{{asset("/assets/admin/img/upload-4.png")}}'" class="vertical-img w-100 mw-100" alt="">
                                         </div>
                                         <input type="file"  name="image" hidden="">
                                     </label>
@@ -97,8 +97,8 @@
                                     <tr>
                                         <td>{{ $key+1 }}</td>
                                         <td>
-                                            <img src="{{asset('storage/app/public/promotional_banner')}}/{{$banner['img']}}"
-                                            onerror="this.src='{{asset('/public/assets/admin/img/upload-3.png')}}'" class="__size-105 mw-100" alt="">
+                                            <img src="{{asset('storage/promotional_banner')}}/{{$banner['img']}}"
+                                            onerror="this.src='{{asset('/assets/admin/img/upload-3.png')}}'" class="__size-105 mw-100" alt="">
                                         </td>
                                         <td>
                                             <div class="btn--container justify-content-center">
@@ -121,7 +121,7 @@
                     </div>
                     @if(count($banners) === 0)
                     <div class="empty--data">
-                        <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                        <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                         <h5>
                             {{translate('no_data_found')}}
                         </h5>
@@ -138,7 +138,7 @@
                             <div class="mb-3">
                                 <h3 class="modal-title mb-3">{{translate('Special review')}}</h3>
                             </div>
-                            <img src="{{asset('/public/assets/admin/img/zone-instruction.png')}}" alt="admin/img" class="w-100">
+                            <img src="{{asset('/assets/admin/img/zone-instruction.png')}}" alt="admin/img" class="w-100">
                         </div>
                     </div>
                 </div>

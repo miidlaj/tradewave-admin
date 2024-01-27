@@ -1,8 +1,8 @@
 @forelse ($stores as $key => $store)
     <div  class="select-product-item media gap-3 cursor-pointer">
         <img class="avatar avatar-xl border" width="75"
-        onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
-        src="{{asset('storage/app/public/store')}}/{{$store['logo']}}"
+        onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+        src="{{asset('storage/store')}}/{{$store['logo']}}"
             alt="">
         <div class="media-body d-flex flex-column gap-1 ">
             <a href="#"  class="d-flex flex-column gap-1"  onclick="selected_stores({{ $store->id }})">

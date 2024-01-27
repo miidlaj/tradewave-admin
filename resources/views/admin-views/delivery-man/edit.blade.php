@@ -3,7 +3,7 @@
 @section('title',translate('Update delivery-man'))
 
 @push('css_or_js')
-    <link rel="stylesheet" href="{{asset('/public/assets/admin/css/intlTelInput.css')}}"/>
+    <link rel="stylesheet" href="{{asset('/assets/admin/css/intlTelInput.css')}}"/>
 @endpush
 
 @section('content')
@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title text-break">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/edit.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/edit.png')}}" class="w--26" alt="">
                 </span>
                 <span>{{translate('messages.update_deliveryman')}}</span>
             </h1>
@@ -101,8 +101,8 @@
                                 <label>{{translate('messages.deliveryman_image')}} <small class="text-danger">* ( {{translate('messages.ratio')}} 1:1 )</small></label>
                                 <center class="py-3 my-auto">
                                     <img class="img--100 rounded" id="viewer"
-                                            src="{{asset('storage/app/public/delivery-man').'/'.$delivery_man['image']}}"
-                                            onerror='this.src="{{asset('/public/assets/admin/img/admin.png')}}"'
+                                            src="{{asset('storage/delivery-man').'/'.$delivery_man['image']}}"
+                                            onerror='this.src="{{asset('/assets/admin/img/admin.png')}}"'
                                             alt="delivery-man image"/>
                                 </center>
                                 <div class="custom-file">
@@ -157,7 +157,7 @@
                                         </div>
                                         @foreach(json_decode($delivery_man['identity_image'],true) as $img)
                                         <div class="col-6 spartan_item_wrapper size--sm">
-                                            <img class="rounded border" src="{{asset('storage/app/public/delivery-man').'/'.$img}}">
+                                            <img class="rounded border" src="{{asset('storage/delivery-man').'/'.$img}}">
                                         </div>
                                         @endforeach
                                     </div>
@@ -198,7 +198,7 @@
                             <div class="js-form-message form-group mb-0">
                                 <label class="input-label" for="signupSrPassword">{{translate('messages.password')}}
                                     <span class="form-label-secondary" data-toggle="tooltip" data-placement="right"
-        data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span>
+        data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span>
                                 </label>
 
                                 <div class="input-group input-group-merge">
@@ -314,7 +314,7 @@
         });
     </script>
 
-    <script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+    <script src="{{asset('assets/admin/js/spartan-multi-image-picker.js')}}"></script>
     <script type="text/javascript">
         $(function () {
             $("#coba").spartanMultiImagePicker({
@@ -324,7 +324,7 @@
                 groupClassName: 'col-6 spartan_item_wrapper size--sm',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: '{{asset('public/assets/admin/img/400x400/img2.jpg')}}',
+                    image: '{{asset('assets/admin/img/400x400/img2.jpg')}}',
                     width: '100%'
                 },
                 dropFileLabel: "Drop Here",
@@ -354,7 +354,7 @@
     </script>
     <script>
         $('#reset_btn').click(function(){
-            $('#viewer').attr('src','{{asset('storage/app/public/delivery-man')}}/{{$delivery_man['image']}}');
+            $('#viewer').attr('src','{{asset('storage/delivery-man')}}/{{$delivery_man['image']}}');
             $("#coba").empty().spartanMultiImagePicker({
                 fieldName: 'identity_image[]',
                 maxCount: 5,
@@ -362,7 +362,7 @@
                 groupClassName: 'col-6 spartan_item_wrapper size--sm',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: '{{asset('public/assets/admin/img/400x400/img2.jpg')}}',
+                    image: '{{asset('assets/admin/img/400x400/img2.jpg')}}',
                     width: '100%'
                 },
                 dropFileLabel: "Drop Here",

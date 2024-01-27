@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/categories.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/categories.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('messages.category_list')}} <span class="badge badge-soft-dark ml-2" id="itemCount">{{$categories->total()}}</span>
@@ -49,13 +49,13 @@
                                     {{-- <span class="dropdown-header">{{translate('messages.options')}}</span>
                                     <a id="export-copy" class="dropdown-item" href="javascript:;">
                                         <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                                src="{{asset('public/assets/admin')}}/svg/illustrations/copy.svg"
+                                                src="{{asset('assets/admin')}}/svg/illustrations/copy.svg"
                                                 alt="Image Description">
                                         {{translate('messages.copy')}}
                                     </a>
                                     <a id="export-print" class="dropdown-item" href="javascript:;">
                                         <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                                src="{{asset('public/assets/admin')}}/svg/illustrations/print.svg"
+                                                src="{{asset('assets/admin')}}/svg/illustrations/print.svg"
                                                 alt="Image Description">
                                         {{translate('messages.print')}}
                                     </a>
@@ -64,19 +64,19 @@
                                         class="dropdown-header">{{translate('messages.download_options')}}</span>
                                     <a id="export-excel" class="dropdown-item" href="{{route('vendor.category.export-categories', ['type'=>'excel',request()->getQueryString()])}}">
                                         <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                                src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
+                                                src="{{asset('assets/admin')}}/svg/components/excel.svg"
                                                 alt="Image Description">
                                         {{translate('messages.excel')}}
                                     </a>
                                     <a id="export-csv" class="dropdown-item" href="{{route('vendor.category.export-categories', ['type'=>'csv',request()->getQueryString()])}}">
                                         <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                                src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                                src="{{asset('assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                                 alt="Image Description">
                                         .{{translate('messages.csv')}}
                                     </a>
                                     {{-- <a id="export-pdf" class="dropdown-item" href="javascript:;">
                                         <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                                src="{{asset('public/assets/admin')}}/svg/components/pdf.svg"
+                                                src="{{asset('assets/admin')}}/svg/components/pdf.svg"
                                                 alt="Image Description">
                                         {{translate('messages.pdf')}}
                                     </a> --}}
@@ -126,7 +126,7 @@
                         <!-- Pagination -->
                         @if(count($categories) === 0)
                         <div class="empty--data">
-                            <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                            <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                             <h5>
                                 {{translate('no_data_found')}}
                             </h5>
@@ -156,7 +156,7 @@
                 },
                 language: {
                     zeroRecords: '<div class="text-center p-4">' +
-                    '<img class="w-7rem mb-3" src="{{asset('public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">' +
+                    '<img class="w-7rem mb-3" src="{{asset('assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">' +
 
                     '</div>'
                 }

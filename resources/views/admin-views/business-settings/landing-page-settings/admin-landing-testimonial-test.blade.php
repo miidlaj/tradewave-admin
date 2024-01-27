@@ -8,7 +8,7 @@
         <div class="d-flex flex-wrap justify-content-between">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/landing.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/landing.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{ translate('messages.admin_landing_pages') }}
@@ -52,7 +52,7 @@
                                             class="form-label-secondary" data-toggle="tooltip"
                                             data-placement="right"
                                             data-original-title="{{ translate('Write_the_title_within_250_characters') }}">
-                                            <img src="{{ asset('public/assets/admin/img/info-circle.svg') }}"
+                                            <img src="{{ asset('assets/admin/img/info-circle.svg') }}"
                                                 alt="">
                                         </span></label>
                                         <textarea name="review" maxlength="250" placeholder="{{translate('Very Good Company')}}" class="form-control h92px">{{ $review->review }}</textarea>
@@ -68,7 +68,7 @@
                                         <label class="upload-img-3 m-0 d-block">
                                             <div class="position-relative">
                                             <div class="img">
-                                                <img src="{{asset('storage/app/public/reviewer_image')}}/{{$review->reviewer_image}}" onerror="this.src='{{asset("/public/assets/admin/img/aspect-1.png")}}'" class="img__aspect-1 mw-100 min-w-187px max-w-187px" alt="">
+                                                <img src="{{asset('storage/reviewer_image')}}/{{$review->reviewer_image}}" onerror="this.src='{{asset("/assets/admin/img/aspect-1.png")}}'" class="img__aspect-1 mw-100 min-w-187px max-w-187px" alt="">
                                             </div>
                                             <input type="file"  name="reviewer_image" hidden="">
                                              @if (isset($review->reviewer_image))
@@ -86,7 +86,7 @@
                                         <label class="upload-img-4 m-0 d-block my-auto">
                                             <div class="position-relative">
                                             <div class="img">
-                                                <img src="{{asset('storage/app/public/reviewer_company_image')}}/{{$review->company_image}}" onerror="this.src='{{asset("/public/assets/admin/img/aspect-3-1.png")}}'" class="vertical-img max-w-187px" alt="">
+                                                <img src="{{asset('storage/reviewer_company_image')}}/{{$review->company_image}}" onerror="this.src='{{asset("/assets/admin/img/aspect-3-1.png")}}'" class="vertical-img max-w-187px" alt="">
                                             </div>
                                             <input type="file" id="image-upload-2" name="company_image" hidden="">
                                             @if (isset($review->company_image))
@@ -134,7 +134,7 @@
                             <div class="mb-3">
                                 <h3 class="modal-title mb-3">{{translate(' Special review')}}</h3>
                             </div>
-                            <img src="{{asset('/public/assets/admin/img/zone-instruction.png')}}" alt="admin/img" class="w-100">
+                            <img src="{{asset('/assets/admin/img/zone-instruction.png')}}" alt="admin/img" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -153,7 +153,7 @@
                             <div class="max-349 mx-auto mb-20">
                                 <div>
                                     <div class="text-center">
-                                        <img src="{{asset('/public/assets/admin/img/modal/this-review-off.png')}}" alt="" class="mb-20">
+                                        <img src="{{asset('/assets/admin/img/modal/this-review-off.png')}}" alt="" class="mb-20">
                                         <h5 class="modal-title">{{translate('By Turning OFF ')}} <strong>{{translate('This review')}}</strong></h5>
                                     </div>
                                     <div class="text-center">
@@ -164,7 +164,7 @@
                                 </div>
                                 <!-- <div>
                                     <div class="text-center">
-                                        <img src="{{asset('/public/assets/admin/img/modal/this-review-on.png')}}" alt="" class="mb-20">
+                                        <img src="{{asset('/assets/admin/img/modal/this-review-on.png')}}" alt="" class="mb-20">
                                         <h5 class="modal-title">{{translate('By Turning ON ')}} <strong>{{translate('This review')}}</strong></h5>
                                     </div>
                                     <div class="text-center">

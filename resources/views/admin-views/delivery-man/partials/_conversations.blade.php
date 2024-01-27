@@ -4,8 +4,8 @@
         <div class="chat-user-info w-100 d-flex align-items-center">
             <div class="chat-user-info-img">
                 <img class="avatar-img"
-                    src="{{asset('storage/app/public/profile/'.$user['image'])}}"
-                    onerror="this.src='{{asset('public/assets/admin')}}/img/160x160/img1.jpg'"
+                    src="{{asset('storage/profile/'.$user['image'])}}"
+                    onerror="this.src='{{asset('assets/admin')}}/img/160x160/img1.jpg'"
                     alt="Image Description">
             </div>
             <div class="chat-user-info-content">
@@ -26,7 +26,7 @@
                             @if($con->file!=null)
                             @foreach (json_decode($con->file) as $img)
                             <br>
-                                <img class="w-100" src="{{asset('storage/app/public/conversation').'/'.$img}}">
+                                <img class="w-100" src="{{asset('storage/conversation').'/'.$img}}">
                                 @endforeach
                             @endif
                         </div>
@@ -41,7 +41,7 @@
                             @if($con->file!=null)
                             @foreach (json_decode($con->file) as $img)
                             <br>
-                                <img class="w-100" src="{{asset('storage/app/public/conversation').'/'.$img}}">
+                                <img class="w-100" src="{{asset('storage/conversation').'/'.$img}}">
                                 @endforeach
                             @endif
                         </div>

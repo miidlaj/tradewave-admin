@@ -3,7 +3,7 @@
 @section('title',translate('Update_Business_Module'))
 
 @push('css_or_js')
-<link rel="stylesheet" href="{{asset('public/assets/admin/css/radio-image.css')}}">
+<link rel="stylesheet" href="{{asset('assets/admin/css/radio-image.css')}}">
 @endpush
 
 @section('content')
@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/module.png')}}" alt="">
+                    <img src="{{asset('assets/admin/img/module.png')}}" alt="">
                 </span>
                 <span>
                     {{translate('Edit_Business_Module')}}
@@ -52,7 +52,7 @@
                                 <label class="input-label d-flex" for="module_type">{{translate('messages.description')}} ({{ translate('messages.default') }})<span class="form-label-secondary text-danger d-flex"
                                     data-toggle="tooltip" data-placement="right"
                                     data-original-title="{{ translate('messages.Write_a_short_description_of_your_new_business_module_within_100_words_(550_characters)')}}"><img
-                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                         alt="{{ translate('messages.veg_non_veg') }}"></span></label>
                                 <textarea class="ckeditor form-control" name="description[]">{!! $module?->getRawOriginal('description') !!}</textarea>
                             </div>
@@ -84,7 +84,7 @@
                                     <label class="input-label d-flex" for="module_type">{{translate('messages.description')}} ({{strtoupper($lang)}})<span class="form-label-secondary text-danger d-flex"
                                         data-toggle="tooltip" data-placement="right"
                                         data-original-title="{{ translate('messages.Write_a_short_description_of_your_new_business_module_within_100_words_(550_characters)')}}"><img
-                                            src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                            src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                             alt="{{ translate('messages.veg_non_veg') }}"></span></label>
                                     <textarea class="ckeditor form-control" name="description[]">{!! $translate[$lang]['description']??'' !!}</textarea>
                                 </div>
@@ -121,7 +121,7 @@
                             <div class="form-group" id="zone_check">
                                 <label class="input-label">{{ translate('Store can serve in') }} <small class="text-danger"><span class="input-label-secondary"
                                         title="{{ translate('messages.business_module_all_zone_hint') }}">
-                                        <img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                        <img src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                             alt="{{ translate('messages.business_module_all_zone_hint') }}" class="initial--14">
                                 </span> *</small></label>
 
@@ -160,7 +160,7 @@
                                             <small class="text-danger">* ( {{translate('messages.ratio')}} 1:1)</small>
                                         </label>
                                         <center class="my-auto py-3">
-                                            <img class="initial--15 " id="viewer" onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'" src="{{asset('storage/app/public/module/'.$module['icon'])}}" alt="image" />
+                                            <img class="initial--15 " id="viewer" onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'" src="{{asset('storage/module/'.$module['icon'])}}" alt="image" />
                                         </center>
                                         <div class="custom-file">
                                             <input type="file" name="icon" id="customFileEg1" class="custom-file-input" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*">
@@ -175,7 +175,7 @@
                                             <small class="text-danger">* ( {{translate('messages.ratio')}} 1:1)</small>
                                         </label>
                                         <center class="my-auto py-3">
-                                            <img class="initial--15 " id="viewer2" onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'" src="{{asset('storage/app/public/module/'.$module['thumbnail'])}}" alt="image" />
+                                            <img class="initial--15 " id="viewer2" onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'" src="{{asset('storage/module/'.$module['thumbnail'])}}" alt="image" />
                                         </center>
                                         <div class="custom-file">
                                             <input type="file" name="thumbnail" id="customFileEg2" class="custom-file-input" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*">
@@ -278,8 +278,8 @@
     </script>
     <script>
         $('#reset_btn').click(function(){
-            $('#viewer').attr('src','{{asset('storage/app/public/module/'.$module['icon'])}}');
-            $('#viewer2').attr('src','{{asset('storage/app/public/module/'.$module['thumbnail'])}}');
+            $('#viewer').attr('src','{{asset('storage/module/'.$module['icon'])}}');
+            $('#viewer2').attr('src','{{asset('storage/module/'.$module['thumbnail'])}}');
         })
 </script>
 @endpush

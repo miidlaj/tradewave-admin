@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/star.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/star.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                     {{translate('messages.customers_reviews')}}
@@ -49,8 +49,8 @@
                             <td>
                                 @if ($review->item)
                                 <a class="media align-items-center" href="{{route('vendor.item.view',[$review->item['id']])}}">
-                                    <img class="avatar avatar-lg mr-3" src="{{asset('storage/app/public/product')}}/{{$review->item['image']}}"
-                                        onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'" alt="{{$review->item->name}} image">
+                                    <img class="avatar avatar-lg mr-3" src="{{asset('storage/product')}}/{{$review->item['image']}}"
+                                        onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" alt="{{$review->item->name}} image">
                                     <div class="media-body">
                                         <h5 class="text-hover-primary mb-0">{{Str::limit($review->item['name'],10)}}</h5>
                                     </div>
@@ -65,8 +65,8 @@
                                 <div class="d-flex align-items-center">
                                     <div class="avatar avatar-circle">
                                         <img class="avatar-img" width="75" height="75"
-                                            onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
-                                            src="{{asset('storage/app/public/profile/'.$review->customer->image)}}"
+                                            onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                                            src="{{asset('storage/profile/'.$review->customer->image)}}"
                                             alt="Image Description">
                                     </div>
                                     <div class="ml-3">
@@ -113,7 +113,7 @@
                 </table>
                 @if(count($reviews) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                    <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>

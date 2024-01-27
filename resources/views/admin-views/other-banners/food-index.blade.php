@@ -13,7 +13,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/3rd-party.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/3rd-party.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                     {{translate('messages.Other_Promotional_Content_Setup')}}
@@ -31,7 +31,7 @@
                             <div class="row g-3">
                                 <div class="col-12 d-flex justify-content-between">
                                     <span class="d-flex g-1">
-                                        <img src="{{asset('public/assets/admin/img/other-banner.png')}}" class="h-85" alt="">
+                                        <img src="{{asset('assets/admin/img/other-banner.png')}}" class="h-85" alt="">
                                         <h3 class="form-label d-block mb-2">
                                             {{translate('Best_Reviewed_Section_Banner')}}
                                         </h3>
@@ -42,7 +42,7 @@
                                                 <i class="tio-info-outined"></i>
                                             </div>
                                             <div class="business-notes">
-                                                <h6><img src="{{asset('/public/assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
+                                                <h6><img src="{{asset('/assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
                                                 <div>
                                                     {{translate('messages.this_banner_is_only_for_react_web.')}}
                                                 </div>
@@ -56,7 +56,7 @@
                                     </h3>
                                     <label class="__upload-img aspect-235-375 m-auto d-block position-relative">
                                         <div class="img">
-                                            <img src="{{asset('storage/app/public/promotional_banner')}}/{{$best_reviewed_section_banner?->value}}" onerror='this.src="{{asset('/public/assets/admin/img/upload-placeholder.png')}}"' alt="">
+                                            <img src="{{asset('storage/promotional_banner')}}/{{$best_reviewed_section_banner?->value}}" onerror='this.src="{{asset('/assets/admin/img/upload-placeholder.png')}}"' alt="">
                                         </div>
                                         <div class="">
                                         <input type="file" name="image"  hidden>
@@ -101,7 +101,7 @@
 @push('script_2')
         <script>
             $('#reset_btn').click(function(){
-                $('#viewer').attr('src','{{asset('/public/assets/admin/img/upload-placeholder.png')}}');
+                $('#viewer').attr('src','{{asset('/assets/admin/img/upload-placeholder.png')}}');
             })
         </script>
         <script>

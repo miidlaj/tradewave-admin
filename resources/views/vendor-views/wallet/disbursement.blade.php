@@ -14,7 +14,7 @@
                 <div class="col-sm mb-2 mb-sm-0">
                     <h2 class="page-header-title text-capitalize">
                         <div class="card-header-icon d-inline-flex mr-2 img">
-                            <img src="{{asset('/public/assets/admin/img/image_90.png')}}" alt="public">
+                            <img src="{{asset('/assets/admin/img/image_90.png')}}" alt="public">
                         </div>
                         <span>
                             {{translate('messages.store_wallet')}}
@@ -66,11 +66,11 @@
                          class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-sm-right">
                         <span class="dropdown-header">{{translate('messages.download_options')}}</span>
                         <a id="export-excel" class="dropdown-item" href="{{route('vendor.wallet.export', ['type'=>'excel',request()->getQueryString()])}}">
-                            <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{asset('public/assets/admin')}}/svg/components/excel.svg" alt="Image Description">
+                            <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{asset('assets/admin')}}/svg/components/excel.svg" alt="Image Description">
                             {{translate('messages.excel')}}
                         </a>
                         <a id="export-csv" class="dropdown-item" href="{{route('vendor.wallet.export', ['type'=>'csv',request()->getQueryString()])}}">
-                            <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg" alt="Image Description">
+                            <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{asset('assets/admin')}}/svg/components/placeholder-csv-format.svg" alt="Image Description">
                             {{translate('messages.csv')}}
                         </a>
 
@@ -264,7 +264,7 @@
                 </table>
                 @if(count($disbursements) === 0)
                     <div class="empty--data">
-                        <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                        <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                         <h5>
                             {{translate('no_data_found')}}
                         </h5>
@@ -303,7 +303,7 @@
                                     <div class="d-flex gap-3 align-items-center">
                                         <input type="radio" required id="{{$item['gateway'] }}" name="payment_gateway" value="{{$item['gateway'] }}">
                                         <label for="{{$item['gateway'] }}" class="d-flex align-items-center gap-3 mb-0">
-                                            <img height="24" src="{{ asset('storage/app/public/payment_modules/gateway_image/'. $item['gateway_image']) }}" alt="">
+                                            <img height="24" src="{{ asset('storage/payment_modules/gateway_image/'. $item['gateway_image']) }}" alt="">
                                             {{ $item['gateway_title'] }}
                                         </label>
                                     </div>

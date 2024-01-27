@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('public/assets/admin/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/admin/css/croppie.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -13,7 +13,7 @@
     <div class="page-header pb-0">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('public/assets/admin/img/landing.png')}}" class="w--26" alt="">
+                <img src="{{asset('assets/admin/img/landing.png')}}" class="w--26" alt="">
             </span>
             <span>
                 {{ translate('messages.landing_page_settings') }}
@@ -59,7 +59,7 @@
 
                     <center id="image-viewer-section" class="initial-hidden pt-2">
                         <img class="img--120" id="viewer"
-                                src="{{asset('public/assets/admin/img/400x400/img2.jpg')}}" alt=""/>
+                                src="{{asset('assets/admin/img/400x400/img2.jpg')}}" alt=""/>
                     </center>
                 </div>
 
@@ -73,7 +73,7 @@
 
                     <center id="image-viewer-section2" class="initial-hidden pt-2">
                         <img class="img--120" id="viewer2"
-                                src="{{asset('public/assets/admin/img/400x400/img2.jpg')}}" alt=""/>
+                                src="{{asset('assets/admin/img/400x400/img2.jpg')}}" alt=""/>
                     </center>
                 </div>
 
@@ -105,8 +105,8 @@
                                 <td scope="row">{{$key + 1}}</td>
                                 <td>
                                     <div class="media align-items-center">
-                                        <img class="avatar avatar-lg mr-3" src="{{asset('public/assets/landing/image')}}/{{isset($sp['img']) ? $sp['img'] : ''}}"
-                                                onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'" alt="{{$sp['name']}}">
+                                        <img class="avatar avatar-lg mr-3" src="{{asset('assets/landing/image')}}/{{isset($sp['img']) ? $sp['img'] : ''}}"
+                                                onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" alt="{{$sp['name']}}">
                                         <div class="media-body">
                                             <h5 class="text-hover-primary mb-0">{{$sp['name']}}</h5>
                                         </div>
@@ -114,8 +114,8 @@
                                 </td>
                                 <td>{{$sp['position']}}</td>
                                 <td>
-                                    <img class="avatar avatar-lg mr-3" src="{{asset('public/assets/landing/image')}}/{{isset($sp['brand_image']) ? $sp['brand_image'] : ''}}"
-                                    onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'" alt="{{$sp['name']}}">
+                                    <img class="avatar avatar-lg mr-3" src="{{asset('assets/landing/image')}}/{{isset($sp['brand_image']) ? $sp['brand_image'] : ''}}"
+                                    onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" alt="{{$sp['name']}}">
                             <div class="media-body">
                                 </td>
                                 <td class="inline--3">
@@ -169,7 +169,7 @@
         });
 
         $('#reset_btn').click(function(){
-            $('#viewer').attr('src','{{asset('public/assets/admin/img/400x400/img2.jpg')}}');
+            $('#viewer').attr('src','{{asset('assets/admin/img/400x400/img2.jpg')}}');
         })
     </script>
 @endpush

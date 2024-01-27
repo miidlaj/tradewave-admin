@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/deliveryman.png')}}" class="w--30" alt="">
+                    <img src="{{asset('assets/admin/img/deliveryman.png')}}" class="w--30" alt="">
                 </span>
                 <span>
                     {{translate('messages.delivery_man_details')}}
@@ -41,7 +41,7 @@
                     <h5 class="subtitle">
                         {{translate('messages.total_delivered_orders')}}
                     </h5>
-                    <img class="resturant-icon w--30" src="{{asset('public/assets/admin/img/tick.png')}}" alt="img">
+                    <img class="resturant-icon w--30" src="{{asset('assets/admin/img/tick.png')}}" alt="img">
                 </div>
             </div>
 
@@ -54,7 +54,7 @@
                     <h5 class="subtitle">
                         {{translate('messages.cash_in_hand')}}
                     </h5>
-                    <img class="resturant-icon w--30" src="{{asset('public/assets/admin/img/withdraw-amount.png')}}" alt="img">
+                    <img class="resturant-icon w--30" src="{{asset('assets/admin/img/withdraw-amount.png')}}" alt="img">
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
                     <h5 class="subtitle">
                         {{translate('messages.total_earning')}}
                     </h5>
-                    <img class="resturant-icon w--30" src="{{asset('public/assets/admin/img/pending.png')}}" alt="img">
+                    <img class="resturant-icon w--30" src="{{asset('assets/admin/img/pending.png')}}" alt="img">
                 </div>
             </div>
 
@@ -89,8 +89,8 @@
                     <div class="col-md-6">
                         <div class="d-flex align-items-center justify-content-center">
                             <img class="avatar avatar-xxl avatar-4by3 mr-4 img--120"
-                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
-                                 src="{{asset('storage/app/public/delivery-man')}}/{{$dm['image']}}"
+                                 onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                                 src="{{asset('storage/delivery-man')}}/{{$dm['image']}}"
                                  alt="Image Description">
                                  <div class="d-block">
                                     <div class="rating--review">
@@ -315,13 +315,13 @@
                             <span class="dropdown-header">{{translate('messages.options')}}</span>
                             <a id="export-copy" class="dropdown-item" href="javascript:;">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{asset('public/assets/admin')}}/svg/illustrations/copy.svg"
+                                        src="{{asset('assets/admin')}}/svg/illustrations/copy.svg"
                                         alt="Image Description">
                                 {{translate('messages.copy')}}
                             </a>
                             <a id="export-print" class="dropdown-item" href="javascript:;">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{asset('public/assets/admin')}}/svg/illustrations/print.svg"
+                                        src="{{asset('assets/admin')}}/svg/illustrations/print.svg"
                                         alt="Image Description">
                                 {{translate('messages.print')}}
                             </a>
@@ -330,19 +330,19 @@
                                 class="dropdown-header">{{translate('messages.download_options')}}</span>
                             <a id="export-excel" class="dropdown-item" href="javascript:;">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
+                                        src="{{asset('assets/admin')}}/svg/components/excel.svg"
                                         alt="Image Description">
                                 {{translate('messages.excel')}}
                             </a>
                             <a id="export-csv" class="dropdown-item" href="javascript:;">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                        src="{{asset('assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                         alt="Image Description">
                                 .{{translate('messages.csv')}}
                             </a>
                             <a id="export-pdf" class="dropdown-item" href="javascript:;">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{asset('public/assets/admin')}}/svg/components/pdf.svg"
+                                        src="{{asset('assets/admin')}}/svg/components/pdf.svg"
                                         alt="Image Description">
                                 {{translate('messages.pdf')}}
                             </a>
@@ -388,8 +388,8 @@
                                     <div class="d-flex align-items-center">
                                         <div class="avatar avatar-circle">
                                             <img class="avatar-img" width="75" height="75"
-                                                onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
-                                                src="{{asset('storage/app/public/profile/'.$review->customer->image)}}"
+                                                onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                                                src="{{asset('storage/profile/'.$review->customer->image)}}"
                                                 alt="Image Description">
                                         </div>
                                         <div class="ml-3">
@@ -417,7 +417,7 @@
                             </td>
                             <td>
                                 @foreach(json_decode($review['attachment'],true) as $attachment)
-                                    <img width="100" onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/app/public')}}/{{$attachment}}">
+                                    <img width="100" onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/app/public')}}/{{$attachment}}">
                                 @endforeach
                             </td>
                             <td>

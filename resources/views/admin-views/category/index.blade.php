@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/category.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/category.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('add_new_category')}}
@@ -84,9 +84,9 @@
                                 <center class="py-3 my-auto">
                                     <img class="img--100" id="viewer"
                                         @if(isset($category))
-                                        src="{{asset('storage/app/public/category')}}/{{$category['image']}}"
+                                        src="{{asset('storage/category')}}/{{$category['image']}}"
                                         @else
-                                        src="{{asset('public/assets/admin/img/900x400/img1.jpg')}}"
+                                        src="{{asset('assets/admin/img/900x400/img1.jpg')}}"
                                         @endif
                                         alt="image"/>
                                 </center>
@@ -149,13 +149,13 @@
                             <span class="dropdown-header">{{ translate('messages.download_options') }}</span>
                             <a id="export-excel" class="dropdown-item" href="{{ route('admin.category.export-categories', ['type' => 'excel', request()->getQueryString()]) }}">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/components/excel.svg"
+                                    src="{{ asset('assets/admin') }}/svg/components/excel.svg"
                                     alt="Image Description">
                                 {{ translate('messages.excel') }}
                             </a>
                             <a id="export-csv" class="dropdown-item" href="{{ route('admin.category.export-categories', ['type' => 'csv', request()->getQueryString()]) }}">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/components/placeholder-csv-format.svg"
+                                    src="{{ asset('assets/admin') }}/svg/components/placeholder-csv-format.svg"
                                     alt="Image Description">
                                 .{{ translate('messages.csv') }}
                             </a>
@@ -254,7 +254,7 @@
             </div>
             @if(count($categories) === 0)
             <div class="empty--data">
-                <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                 <h5>
                     {{translate('no_data_found')}}
                 </h5>
@@ -318,7 +318,7 @@
     <script>
         $('#reset_btn').click(function(){
             $('#module_id').val(null).trigger('change');
-            $('#viewer').attr('src', "{{asset('public/assets/admin/img/900x400/img1.jpg')}}");
+            $('#viewer').attr('src', "{{asset('assets/admin/img/900x400/img1.jpg')}}");
         })
     </script>
 @endpush

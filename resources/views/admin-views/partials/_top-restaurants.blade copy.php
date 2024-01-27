@@ -19,7 +19,7 @@
         @foreach($top_restaurants as $key=>$item)
         <li>
             <div class="top--resturant-item cursor-pointer" onclick="location.href='{{route('admin.store.view', $item->id)}}'">
-                <img onerror="this.src='{{asset('public/assets/admin/img/100x100/1.png')}}'" src="{{asset('storage/app/public/store')}}/{{$item['logo']}}">
+                <img onerror="this.src='{{asset('assets/admin/img/100x100/1.png')}}'" src="{{asset('storage/store')}}/{{$item['logo']}}">
                 <div class="top--resturant-item-content">
                     <h5 class="name mt-0 mb-2">
                         {{Str::limit($item->name??translate('messages.store deleted!'), 20, '...')}}

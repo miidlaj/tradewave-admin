@@ -13,7 +13,7 @@
             <div class="row align-items-center py-2">
                 <div class="col-sm mb-2 mb-sm-0">
                     <div class="d-flex align-items-center">
-                        <img src="{{asset('/public/assets/admin/img/new-img/users.svg')}}" alt="img">
+                        <img src="{{asset('/assets/admin/img/new-img/users.svg')}}" alt="img">
                         <div class="w-0 flex-grow pl-3">
                             {{-- <h1 class="page-header-title mb-0">{{translate('messages.welcome')}}, {{auth('admin')->user()->f_name}}.</h1> --}}
                             <h1 class="page-header-title mb-0">{{ translate('messages.Transaction Overview') }}</h1>

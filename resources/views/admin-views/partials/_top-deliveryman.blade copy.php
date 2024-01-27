@@ -21,7 +21,7 @@
                 <div class="grid-card style-2 position-relative">
                     <label class="label_1">{{ translate('messages.orders') }} : {{$item['order_count']}}</label>
                     <center class="mt-6">
-                        <img class="img--60 img--circle" onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/app/public/delivery-man')}}/{{$item['image']??''}}">
+                        <img class="img--60 img--circle" onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/delivery-man')}}/{{$item['image']??''}}">
                     </center>
                     <div class="text-center mt-2">
                         <span class="fz--13">{{$item['f_name']??'Not exist'}}</span>

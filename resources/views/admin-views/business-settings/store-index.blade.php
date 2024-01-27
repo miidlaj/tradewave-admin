@@ -9,7 +9,7 @@
         <div class="page-header">
             <h1 class="page-header-title mr-3">
                 <span class="page-header-icon">
-                    <img src="{{ asset('public/assets/admin/img/business.png') }}" class="w--26" alt="">
+                    <img src="{{ asset('assets/admin/img/business.png') }}" class="w--26" alt="">
                 </span>
                 <span>
                     {{ translate('messages.business_setup') }}
@@ -73,7 +73,7 @@
                                                 <span class="form-label-secondary text-danger d-flex"
                                                     data-toggle="tooltip" data-placement="right"
                                                     data-original-title="{{ translate('messages.A_store_can_send_a_registration_request_through_their_store_or_customer.') }}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.store_self_registration') }}"> *
                                                 </span>
                                             </span>
@@ -99,7 +99,7 @@
                                                 <span class="form-label-secondary text-danger d-flex"
                                                     data-toggle="tooltip" data-placement="right"
                                                     data-original-title="{{ translate('messages.If_enabled,can_create_duplicate_products.')}}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.Product_Gallery') }}"> *
                                                 </span>
                                             </span>
@@ -124,7 +124,7 @@
                                                 <span class="form-label-secondary text-danger d-flex"
                                                     data-toggle="tooltip" data-placement="right"
                                                     data-original-title="{{ translate('messages.If_enabled,can_create_duplicate_products.')}}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.access_all_products') }}"> *
                                                 </span>
                                             </span>
@@ -149,7 +149,7 @@
                                                 <span class="form-label-secondary text-danger d-flex"
                                                     data-toggle="tooltip" data-placement="right"
                                                     data-original-title="{{ translate('messages.If_enabled,_this_option_to_require_admin_approval_for_products_to_be_displayed_on_the_user_side.')}}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.customer_varification_toggle') }}"> *
                                                 </span>
                                             </span>
@@ -209,7 +209,7 @@
                                                 <span class="form-label-secondary text-danger d-flex"
                                                       data-toggle="tooltip" data-placement="right"
                                                       data-original-title="{{ translate('If_enabled,_stores_will_be_automatically_suspended_by_the_system_when_their_‘Cash_in_Hand’_limit_is_exceeded.') }}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.cash_in_hand_overflow') }}"> *
                                                 </span>
                                             </span>
@@ -242,7 +242,7 @@
                                         <span class="form-label-secondary"
                                               data-toggle="tooltip" data-placement="right"
                                               data-original-title="{{ translate('Enter_the_maximum_cash_amount_stores_can_hold._If_this_number_exceeds,_stores_will_be_suspended_and_not_receive_any_orders.') }}"><img
-                                                src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                 alt="{{ translate('messages.dm_cancel_order_hint') }}"></span>
                                     </label>
                                     <input type="number" name="cash_in_hand_overflow_store_amount" class="form-control"
@@ -267,7 +267,7 @@
                                         <span class="form-label-secondary"
                                               data-toggle="tooltip" data-placement="right"
                                               data-original-title="{{ translate('Enter_the_minimum_cash_amount_stores_can_pay') }}"><img
-                                                src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                 alt="{{ translate('messages.dm_cancel_order_hint') }}"></span>
                                     </label>
                                     <input type="number" name="min_amount_to_pay_store" class="form-control"

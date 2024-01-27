@@ -33,7 +33,7 @@
                                     <i class="tio-globe"></i>
                                                 {{-- <img
                                                      width="20"
-                                                     src="{{asset('public/assets/admin')}}/img/flags/{{$data['code']}}.png"
+                                                     src="{{asset('assets/admin')}}/img/flags/{{$data['code']}}.png"
                                                      alt="Eng"> --}}
                                                 {{$data['code']}}
                                             @endif
@@ -48,7 +48,7 @@
                                                         {{-- <img
 
                                                             width="20"
-                                                            src="{{asset('public/assets/admin')}}/img/flags/{{$data['code']}}.png"
+                                                            src="{{asset('assets/admin')}}/img/flags/{{$data['code']}}.png"
                                                             alt="{{$data['code']}}"/> --}}
                                                         <span class="text-capitalize">{{$data['code']}}</span>
                                                     </a>
@@ -96,8 +96,8 @@
                                     </div>
                                     <div class="avatar avatar-sm avatar-circle">
                                         <img class="avatar-img"
-                                            onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
-                                            src="{{asset('storage/app/public/vendor')}}/{{\App\CentralLogics\Helpers::get_loggedin_user()->image}}"
+                                            onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                                            src="{{asset('storage/vendor')}}/{{\App\CentralLogics\Helpers::get_loggedin_user()->image}}"
                                             alt="Image Description">
                                         <span class="avatar-status avatar-sm-status avatar-status-success"></span>
                                     </div>
@@ -110,8 +110,8 @@
                                     <div class="media align-items-center">
                                         <div class="avatar avatar-sm avatar-circle mr-2">
                                             <img class="avatar-img"
-                                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
-                                                 src="{{asset('storage/app/public/vendor')}}/{{\App\CentralLogics\Helpers::get_loggedin_user()->image}}"
+                                                 onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                                                 src="{{asset('storage/vendor')}}/{{\App\CentralLogics\Helpers::get_loggedin_user()->image}}"
                                                  alt="Owner image">
                                         </div>
                                         <div class="media-body">
@@ -170,7 +170,7 @@ $val=  $cash_in_hand_overflow_store_amount - (($cash_in_hand_overflow_store_amou
 
 @if ($Payable_Balance == 1 &&  $cash_in_hand_overflow &&  $wallet?->balance < 0 &&  $val <=  abs($wallet?->balance)  &&  $cash_in_hand_overflow_store_amount >= abs($wallet?->balance))
     <div class="alert __alert-2 alert-warning m-0 py-1 px-2" role="alert">
-        <img class="rounded mr-1"  width="25" src="{{ asset('/public/assets/admin/img/header_warning.png') }}" alt="">
+        <img class="rounded mr-1"  width="25" src="{{ asset('/assets/admin/img/header_warning.png') }}" alt="">
         <div class="cont">
             <h4 class="m-0">{{ translate('Attention_Please') }} </h4>
             {{ translate('The_Cash_in_Hand_amount_is_about_to_exceed_the_limit._Please_pay_the_due_amount._If_the_limit_exceeds,_your_account_will_be_suspended.') }}
@@ -180,7 +180,7 @@ $val=  $cash_in_hand_overflow_store_amount - (($cash_in_hand_overflow_store_amou
 
 @if ($Payable_Balance == 1 &&  $cash_in_hand_overflow &&  $wallet?->balance < 0 &&  $cash_in_hand_overflow_store_amount < abs($wallet?->balance))
     <div class="alert __alert-2 alert-warning m-0 py-1 px-2" role="alert">
-        <img class="mr-1"  width="25" src="{{ asset('/public/assets/admin/img/header_warning.png') }}" alt="">
+        <img class="mr-1"  width="25" src="{{ asset('/assets/admin/img/header_warning.png') }}" alt="">
         <div class="cont">
             <h4 class="m-0">{{ translate('Attention_Please') }} </h4>{{ translate('The_Cash_in_Hand_amount_limit_is_exceeded._Your_account_is_now_suspended._Please_pay_the_due_amount_to_receive_new_order_requests_again.') }}<a href="{{ route('vendor.wallet.index') }}" class="alert-link"> &nbsp; {{ translate('Pay_the_due') }}</a>
         </div>

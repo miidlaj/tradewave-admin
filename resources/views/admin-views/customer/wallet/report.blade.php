@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title mr-3">
                 <span class="page-header-icon">
-                    <img src="{{asset('/public/assets/admin/img/wallet.png')}}" class="w--26" alt="">
+                    <img src="{{asset('/assets/admin/img/wallet.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                      {{translate('messages.customer_wallet_report')}}
@@ -93,7 +93,7 @@
                             <span class="subtitle">
                                 {{\App\CentralLogics\Helpers::format_currency($debit)}}
                             </span>
-                            <img class="resturant-icon" src="{{asset('public/assets/admin/img/customer-loyality/1.png')}}" alt="dashboard">
+                            <img class="resturant-icon" src="{{asset('assets/admin/img/customer-loyality/1.png')}}" alt="dashboard">
                         </div>
                     </div>
                     <!--Debit earned End-->
@@ -104,7 +104,7 @@
                             <span class="subtitle">
                                 {{\App\CentralLogics\Helpers::format_currency($credit)}}
                             </span>
-                            <img class="resturant-icon" src="{{asset('public/assets/admin/img/customer-loyality/2.png')}}" alt="dashboard">
+                            <img class="resturant-icon" src="{{asset('assets/admin/img/customer-loyality/2.png')}}" alt="dashboard">
                         </div>
                     </div>
                     <!--credit earned end-->
@@ -115,7 +115,7 @@
                             <span class="subtitle">
                                 {{\App\CentralLogics\Helpers::format_currency($balance)}}
                             </span>
-                            <img class="resturant-icon" src="{{asset('public/assets/admin/img/customer-loyality/3.png')}}" alt="dashboard">
+                            <img class="resturant-icon" src="{{asset('assets/admin/img/customer-loyality/3.png')}}" alt="dashboard">
                         </div>
                     </div>
                     <!--balance earned end-->
@@ -150,19 +150,19 @@
                         <span class="dropdown-header">{{ translate('messages.download_options') }}</span>
                         <a id="export-excel" class="dropdown-item" href="{{route('admin.users.customer.wallet.export', ['type'=>'excel',request()->getQueryString()])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                src="{{ asset('public/assets/admin') }}/svg/components/excel.svg"
+                                src="{{ asset('assets/admin') }}/svg/components/excel.svg"
                                 alt="Image Description">
                             {{ translate('messages.excel') }}
                         </a>
                         <a id="export-csv" class="dropdown-item" href="{{route('admin.users.customer.wallet.export', ['type'=>'csv',request()->getQueryString()])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                src="{{ asset('public/assets/admin') }}/svg/components/placeholder-csv-format.svg"
+                                src="{{ asset('assets/admin') }}/svg/components/placeholder-csv-format.svg"
                                 alt="Image Description">
                             .{{ translate('messages.csv') }}
                         </a>
                         {{-- <a id="export-pdf" class="dropdown-item" href="javascript:;">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                src="{{ asset('public/assets/admin') }}/svg/components/pdf.svg"
+                                src="{{ asset('assets/admin') }}/svg/components/pdf.svg"
                                 alt="Image Description">
                             {{ translate('messages.pdf') }}
                         </a> --}}
@@ -234,7 +234,7 @@
             </div>
             @if(count($transactions) === 0)
             <div class="empty--data">
-                <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                 <h5>
                     {{translate('no_data_found')}}
                 </h5>
@@ -251,10 +251,10 @@
 
 @push('script_2')
 
-    <script src="{{asset('public/assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="{{asset('assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
     <script
-        src="{{asset('public/assets/admin')}}/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
-    <script src="{{asset('public/assets/admin')}}/js/hs.chartjs-matrix.js"></script>
+        src="{{asset('assets/admin')}}/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
+    <script src="{{asset('assets/admin')}}/js/hs.chartjs-matrix.js"></script>
 
     <script>
         $(document).on('ready', function () {

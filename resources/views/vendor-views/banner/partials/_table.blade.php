@@ -3,8 +3,8 @@
                                     <td>{{$key+1}}</td>
                                     <td>
                                         <span class="media align-items-center">
-                                            <img class="img--ratio-3 w-auto h--50px rounded mr-2" src="{{asset('storage/app/public/banner')}}/{{$banner['image']}}"
-                                                 onerror="this.src='{{asset('/public/assets/admin/img/900x400/img1.jpg')}}'" alt="{{$banner->name}} image">
+                                            <img class="img--ratio-3 w-auto h--50px rounded mr-2" src="{{asset('storage/banner')}}/{{$banner['image']}}"
+                                                 onerror="this.src='{{asset('/assets/admin/img/900x400/img1.jpg')}}'" alt="{{$banner->name}} image">
                                         </span>
                                     </td>
                                     <td><a href="{{ $banner->default_link }}">{{ $banner->default_link }}</a></td>

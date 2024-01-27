@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title text-break">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/delivery-man.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/delivery-man.png')}}" class="w--26" alt="">
                 </span>
                 <span>{{translate('messages.deliveryman_preview')}}<span class="badge badge-soft-dark ml-2" id="itemCount">{{$reviews->total()}}</span></span>
             </h1>
@@ -67,7 +67,7 @@
                     <h5 class="subtitle">
                         {{translate('messages.total_delivered_orders')}}
                     </h5>
-                    <img class="resturant-icon w--30" src="{{asset('public/assets/admin/img/tick.png')}}" alt="img">
+                    <img class="resturant-icon w--30" src="{{asset('assets/admin/img/tick.png')}}" alt="img">
                 </div>
             </div>
 
@@ -80,7 +80,7 @@
                     <h5 class="subtitle">
                         {{translate('messages.cash_in_hand')}}
                     </h5>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/withdraw-amount.png')}}" alt="transactions">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/withdraw-amount.png')}}" alt="transactions">
                 </div>
             </div>
 
@@ -93,7 +93,7 @@
                     <h5 class="subtitle">
                         {{translate('messages.total_earning')}}
                     </h5>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/pending.png')}}" alt="transactions">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/pending.png')}}" alt="transactions">
                 </div>
             </div>
 
@@ -117,7 +117,7 @@
                             <h5 class="subtitle">
                                 {{translate('messages.Withdraw_Able_Balance')}}
                             </h5>
-                            <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/pending.png')}}" alt="transactions">
+                            <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/pending.png')}}" alt="transactions">
                         </div>
                     </div>
                 @elseif($balance < 0)
@@ -129,7 +129,7 @@
                             <h5 class="subtitle">
                                 {{translate('messages.Payable_Balance')}}
                             </h5>
-                            <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/pending.png')}}" alt="transactions">
+                            <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/pending.png')}}" alt="transactions">
                         </div>
                     </div>
 
@@ -142,7 +142,7 @@
                             <h5 class="subtitle">
                                 {{translate('messages.Balance')}}
                             </h5>
-                            <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/pending.png')}}" alt="transactions">
+                            <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/pending.png')}}" alt="transactions">
                         </div>
                     </div>
 
@@ -157,7 +157,7 @@
                         <h5 class="subtitle">
                             {{translate('messages.Total_withdrawn')}}
                         </h5>
-                        <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/pending.png')}}" alt="transactions">
+                        <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/pending.png')}}" alt="transactions">
                     </div>
                 </div>
 
@@ -169,7 +169,7 @@
                         <h5 class="subtitle">
                             {{translate('messages.Pending_withdraw')}}
                         </h5>
-                        <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/pending.png')}}" alt="transactions">
+                        <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/pending.png')}}" alt="transactions">
                     </div>
                 </div>
 
@@ -249,8 +249,8 @@
                     <div class="col-md-4">
                         <div class="d-flex align-items-center justify-content-center">
                             <img class="avatar avatar-xxl avatar-4by3 mr-4 img--120"
-                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
-                                 src="{{asset('storage/app/public/delivery-man')}}/{{$dm['image']}}"
+                                 onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                                 src="{{asset('storage/delivery-man')}}/{{$dm['image']}}"
                                  alt="Image Description">
                             <div class="d-block">
                                 <div class="rating--review">
@@ -437,8 +437,8 @@
                                 <button class="btn w-100" data-toggle="modal"
                                     data-target="#image-{{ $key }}">
                                     <div class="gallary-card">
-                                        <img onerror="this.src='{{ asset('/public/assets/admin/img/900x400/img1.jpg') }}'"
-                                        src="{{ asset('storage/app/public/delivery-man') }}/{{ $img }}" class="w-100">
+                                        <img onerror="this.src='{{ asset('/assets/admin/img/900x400/img1.jpg') }}'"
+                                        src="{{ asset('storage/delivery-man') }}/{{ $img }}" class="w-100">
                                     </div>
                                 </button>
                                 <div class="modal fade" id="image-{{ $key }}" tabindex="-1" role="dialog"
@@ -453,8 +453,8 @@
                                                     class="sr-only">{{ translate('messages.Close') }}</span></button>
                                         </div>
                                         <div class="modal-body">
-                                            <img onerror="this.src='{{ asset('/public/assets/admin/img/900x400/img1.jpg') }}'"
-                                                src="{{ asset('storage/app/public/delivery-man/' . $img) }}"
+                                            <img onerror="this.src='{{ asset('/assets/admin/img/900x400/img1.jpg') }}'"
+                                                src="{{ asset('storage/delivery-man/' . $img) }}"
                                                 class="w-100">
                                         </div>
                                         <div class="modal-footer">
@@ -491,19 +491,19 @@
                             <span class="dropdown-header">{{ translate('messages.download_options') }}</span>
                             <a id="export-excel" class="dropdown-item" href="{{route('admin.delivery-man.review-export', ['type'=>'excel','id'=>$dm->id,request()->getQueryString()])}}">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/components/excel.svg"
+                                    src="{{ asset('assets/admin') }}/svg/components/excel.svg"
                                     alt="Image Description">
                                 {{ translate('messages.excel') }}
                             </a>
                             <a id="export-csv" class="dropdown-item" href="{{route('admin.delivery-man.review-export', ['type'=>'csv','id'=>$dm->id,request()->getQueryString()])}}">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/components/placeholder-csv-format.svg"
+                                    src="{{ asset('assets/admin') }}/svg/components/placeholder-csv-format.svg"
                                     alt="Image Description">
                                 .{{ translate('messages.csv') }}
                             </a>
                             {{-- <a id="export-pdf" class="dropdown-item" href="javascript:;">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/components/pdf.svg"
+                                    src="{{ asset('assets/admin') }}/svg/components/pdf.svg"
                                     alt="Image Description">
                                 {{ translate('messages.pdf') }}
                             </a> --}}
@@ -552,8 +552,8 @@
                                         href="{{route('admin.customer.view',[$review['user_id']])}}">
                                             <div class="avatar avatar-circle">
                                                 <img class="avatar-img" width="75" height="75"
-                                                    {{-- onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'" --}}
-                                                    src="{{asset('storage/app/public/profile/')}}/{{$review->customer?$review->customer->image:''}}"
+                                                    {{-- onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'" --}}
+                                                    src="{{asset('storage/profile/')}}/{{$review->customer?$review->customer->image:''}}"
                                                     alt="Image Description">
                                             </div>
                                             <div class="ml-3">
@@ -600,7 +600,7 @@
                 </div>
                 @if(count($reviews) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                    <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>

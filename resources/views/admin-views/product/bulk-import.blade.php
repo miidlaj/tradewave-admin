@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="{{ asset('public/assets/admin/css/tags-input.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/admin/css/tags-input.min.css') }}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/items.png')}}" class="w--22" alt="">
+                    <img src="{{asset('assets/admin/img/items.png')}}" class="w--22" alt="">
                 </span>
                 <span>
                     {{translate('messages.items_bulk_import')}}
@@ -66,11 +66,11 @@
                     <h3 class="mb-3 export--template-title">{{translate('download_spreadsheet_template')}}</h3>
                     <div class="btn--container justify-content-center export--template-btns">
                         @if($module_type== 'food')
-                        <a href="{{asset('public/assets/foods_bulk_format.xlsx')}}" download="" class="btn btn-dark">{{translate('template_with_existing_data')}}</a>
+                        <a href="{{asset('assets/foods_bulk_format.xlsx')}}" download="" class="btn btn-dark">{{translate('template_with_existing_data')}}</a>
                         @else
-                        <a href="{{asset('public/assets/items_bulk_format.xlsx')}}" download="" class="btn btn-dark">{{translate('template_with_existing_data')}}</a>
+                        <a href="{{asset('assets/items_bulk_format.xlsx')}}" download="" class="btn btn-dark">{{translate('template_with_existing_data')}}</a>
                             @endif
-                        <a href="{{asset('public/assets/items_bulk_format_nodata.xlsx')}}" download="" class="btn btn-dark">{{translate('template_without_data')}}</a>
+                        <a href="{{asset('assets/items_bulk_format_nodata.xlsx')}}" download="" class="btn btn-dark">{{translate('template_without_data')}}</a>
                     </div>
                 </div>
             </div>
@@ -357,7 +357,7 @@
 
     }
 </script>
-<script src="{{ asset('public/assets/admin') }}/js/tags-input.min.js"></script>
+<script src="{{ asset('assets/admin') }}/js/tags-input.min.js"></script>
 
 <script>
     $('#choice_attributes').on('change', function() {

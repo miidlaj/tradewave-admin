@@ -22,8 +22,8 @@
                 <div class="grid-card">
                     <label class="label_1 text-center">{{translate('messages.sold')}} : {{$item['order_count']}}</label>
                     <img class="initial--28"
-                         src="{{asset('storage/app/public/product')}}/{{$item['image']}}"
-                         onerror="this.src='{{asset('public/assets/admin/img/placeholder-2.png')}}'"
+                         src="{{asset('storage/product')}}/{{$item['image']}}"
+                         onerror="this.src='{{asset('assets/admin/img/placeholder-2.png')}}'"
                          alt="{{$item->name}} image">
                     <div class="text-center mt-2">
                         <span class="fz--13">{{Str::limit($item['name'],20,'...')}}</span>

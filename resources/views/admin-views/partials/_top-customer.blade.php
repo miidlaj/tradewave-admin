@@ -13,7 +13,7 @@
         
             @foreach($top_customers as $key=>$item)
             <a class="grid--card" href="{{route('admin.users.customer.view',[$item['id']])}}">
-                <img onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/app/public/profile/'.$item->image??'')}}">
+                <img onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/profile/'.$item->image??'')}}">
                 <div class="cont pt-2">
                     <h6 class="mb-1">{{$item['f_name']?? translate('Not exist')}}</h6>
                     <span>{{$item['phone']??''}}</span>

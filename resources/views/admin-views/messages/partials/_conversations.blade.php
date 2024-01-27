@@ -4,8 +4,8 @@
         <div class="chat-user-info w-100 d-flex align-items-center">
             <div class="chat-user-info-img">
                 <img class="avatar-img"
-                    src="{{asset('storage/app/public/profile/'.$user['image'])}}"
-                    onerror="this.src='{{asset('public/assets/admin')}}/img/160x160/img1.jpg'"
+                    src="{{asset('storage/profile/'.$user['image'])}}"
+                    onerror="this.src='{{asset('assets/admin')}}/img/160x160/img1.jpg'"
                     alt="Image Description">
             </div>
             <div class="chat-user-info-content">
@@ -16,7 +16,7 @@
         </div>
         <div class="dropdown">
             <button class="btn shadow-none" data-toggle="dropdown">
-                <img src="{{asset('/public/assets/admin/img/ellipsis.png')}}" alt="">
+                <img src="{{asset('/assets/admin/img/ellipsis.png')}}" alt="">
             </button>
             <ul class="dropdown-menu conv-dropdown-menu">
                 <li>
@@ -40,7 +40,7 @@
                                 @foreach (json_decode($con->file) as $img)
                                 <br>
                                     <img class="w-100"
-                                    src="{{asset('storage/app/public/conversation').'/'.$img}}">
+                                    src="{{asset('storage/conversation').'/'.$img}}">
                                     @endforeach
                                 @endif
                         </div>
@@ -56,7 +56,7 @@
                             @foreach (json_decode($con->file) as $img)
                             <br>
                                 <img class="w-100"
-                                src="{{asset('storage/app/public/conversation').'/'.$img}}">
+                                src="{{asset('storage/conversation').'/'.$img}}">
                                 @endforeach
                             @endif
                         </div>
@@ -88,15 +88,15 @@
                     <div id="file-upload-filename" class="upload__file-wrap"></div>
                     <div class="upload-btn-grp">
                         <label class="m-0">
-                            <img src="{{asset('/public/assets/admin/img/gallery.png')}}" alt="">
+                            <img src="{{asset('/assets/admin/img/gallery.png')}}" alt="">
                             <input type="file" name="images[]" class="d-none upload_input_images" data-max_length="2"  multiple="" >
                         </label>
                         {{-- <label class="m-0">
-                            <img src="{{asset('/public/assets/admin/img/file.png')}}" alt="">
+                            <img src="{{asset('/assets/admin/img/file.png')}}" alt="">
                             <input type="file" class="d-none" id="file-upload">
                         </label> --}}
                         <label class="m-0 emoji-icon-hidden">
-                            <img src="{{asset('/public/assets/admin/img/emoji.png')}}" alt="">
+                            <img src="{{asset('/assets/admin/img/emoji.png')}}" alt="">
                         </label>
                     </div>
                 </div>
@@ -212,7 +212,7 @@
             groupClassName: 'attc--img border-0',
             maxFileSize: '',
             placeholderImage: {
-                image: '{{ asset('public/assets/admin/img/gallery.png') }}',
+                image: '{{ asset('assets/admin/img/gallery.png') }}',
                 width: '100%'
             },
             dropFileLabel: "Drop Here",

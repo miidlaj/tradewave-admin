@@ -22,7 +22,7 @@
                 <div class="grid-card min-height-170">
                     <label class="label_1">Orders : {{$item['count']}}</label>
                     <center class="mt-6">
-                        <img class="img--60 img--circle" onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/app/public/profile/'.$item->customer->image??'')}}">
+                        <img class="img--60 img--circle" onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'" src="{{asset('storage/profile/'.$item->customer->image??'')}}">
                     </center>
                     <div class="text-center mt-2">
                         <span class="fz--10">{{$item->customer['f_name']??'Not exist'}}</span>

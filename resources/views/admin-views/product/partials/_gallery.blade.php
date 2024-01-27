@@ -5,8 +5,8 @@
         <div class="product-card card" onclick="quickView('{{$item->id}}')">
             <div class="card-header inline_product clickable p-0 initial--31">
                 <div class="d-flex align-items-center justify-content-center h-100 d-block w-100">
-                    <img src="{{asset('storage/app/public/product')}}/{{$item['image']}}"
-                        onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+                    <img src="{{asset('storage/product')}}/{{$item['image']}}"
+                        onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'"
                         class="w-100 h-100 object-cover">
                 </div>
             </div>
@@ -36,8 +36,8 @@
                         <div>
                             <div class="d-flex flex-wrap align-items-center food--media position-relative mr-4">
                                 <img class="avatar avatar-xxl avatar-4by3"
-                                    src="{{ asset('storage/app/public/product') }}/{{ $item['image'] }}"
-                                    onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
+                                    src="{{ asset('storage/product') }}/{{ $item['image'] }}"
+                                    onerror="this.src='{{ asset('assets/admin/img/160x160/img2.jpg') }}'"
                                     alt="Image Description">
                             </div>
                         </div>

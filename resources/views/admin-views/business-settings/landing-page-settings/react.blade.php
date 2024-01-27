@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{ asset('public/assets/admin/css/croppie.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/admin/css/croppie.css') }}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -14,7 +14,7 @@
             <!-- Page Header -->
             <h1 class="page-header-title text-capitalize">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/landing.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/landing.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                     {{ translate('messages.landing_page_settings') }}
@@ -74,8 +74,8 @@
 
                                     <center id="image-viewer-section3">
                                         <img class="initial-7 img--200" id="viewer3"
-                                            src="{{ asset('storage/app/public/react_landing/') }}/{{ isset($react_header_banner) ? $react_header_banner : 'react_header_banner.png' }}"
-                                            onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'"
+                                            src="{{ asset('storage/react_landing/') }}/{{ isset($react_header_banner) ? $react_header_banner : 'react_header_banner.png' }}"
+                                            onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'"
                                             alt="" />
                                     </center>
                                 </label>
@@ -112,8 +112,8 @@
 
                                     <center id="image-viewer-section6">
                                         <img class="initial-7 img--200" id="viewer6"
-                                            src="{{ asset('storage/app/public/react_landing') }}/{{ isset($app_section_image) ? $app_section_image : 'app_section_image.png' }}"
-                                            onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'"
+                                            src="{{ asset('storage/react_landing') }}/{{ isset($app_section_image) ? $app_section_image : 'app_section_image.png' }}"
+                                            onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'"
                                             alt="" />
                                     </center>
                                 </label>
@@ -149,8 +149,8 @@
 
                                     <center id="image-viewer-section7">
                                         <img class="initial-7 img--200" id="viewer7"
-                                            src="{{ asset('storage/app/public/react_landing') }}/{{ isset($footer_logo) ? $footer_logo : 'footer_logo.png' }}"
-                                            onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'"
+                                            src="{{ asset('storage/react_landing') }}/{{ isset($footer_logo) ? $footer_logo : 'footer_logo.png' }}"
+                                            onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'"
                                             alt="" />
                                     </center>
                                 </label>
@@ -271,8 +271,8 @@
 
                                                 <center id="image-viewer-section" class="pt-2 mt-auto mb-auto">
                                                     <img class="initial-5 img--200" id="viewer"
-                                                        src="{{ asset('storage/app/public/react_landing') }}/{{ $delivery_service_section['delivery_service_section_image'] ?? null }}"
-                                                        onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'"
+                                                        src="{{ asset('storage/react_landing') }}/{{ $delivery_service_section['delivery_service_section_image'] ?? null }}"
+                                                        onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'"
                                                         alt="" />
                                                 </center>
 
@@ -345,8 +345,8 @@
 
                                                 <center id="image-viewer-section" class="pt-2 mt-auto mb-auto">
                                                     <img class="initial-5 img--200" id="viewer"
-                                                        src="{{ asset('storage/app/public/react_landing') }}/{{ $full_banner_section['banner_section_img_full'] ?? null }}"
-                                                        onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'"
+                                                        src="{{ asset('storage/react_landing') }}/{{ $full_banner_section['banner_section_img_full'] ?? null }}"
+                                                        onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'"
                                                         alt="" />
                                                 </center>
 
@@ -420,8 +420,8 @@
 
                                                 <center id="image-viewer-section2" class="pt-2 mt-auto mb-auto">
                                                     <img class="initial-5 img--200" id="viewer2"
-                                                        src="{{ asset('storage/app/public/react_landing') }}/{{ $discount_section['img'] ?? null }}"
-                                                        onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'"
+                                                        src="{{ asset('storage/react_landing') }}/{{ $discount_section['img'] ?? null }}"
+                                                        onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'"
                                                         alt="" />
                                                 </center>
 
@@ -496,8 +496,8 @@
                                                     )</small></label>
                                                 <center id="image-viewer-viewer_banner_half_{{ $i }}" class="pt-2 mt-auto mb-auto">
                                                 <img class="initial-5 img--200" id="viewer_banner_half_{{ $i }}"
-                                                    src="{{ asset('storage/app/public/react_landing') }}/{{ isset($banner_section_half[$i]['img']) ? $banner_section_half[$i]['img'] : 'banner_1.png' }}"
-                                                    onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'"
+                                                    src="{{ asset('storage/react_landing') }}/{{ isset($banner_section_half[$i]['img']) ? $banner_section_half[$i]['img'] : 'banner_1.png' }}"
+                                                    onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'"
                                                     alt="" />
                                                 </center>
                                                 <div class="custom-file mt-2">

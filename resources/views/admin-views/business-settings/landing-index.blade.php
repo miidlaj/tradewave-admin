@@ -16,7 +16,7 @@
         <div class="page-header">
             <h1 class="page-header-title mr-3">
                 <span class="page-header-icon">
-                    <img src="{{ asset('public/assets/admin/img/business.png') }}" class="w--26" alt="">
+                    <img src="{{ asset('assets/admin/img/business.png') }}" class="w--26" alt="">
                 </span>
                 <span>
                     {{ translate('messages.business_setup') }}
@@ -135,7 +135,7 @@
                                                 <div class="d-flex flex-wrap align-items-center gap-3">
                                                     <div class="">
                                                         <img width="24"
-                                                            src="{{ asset('/public/assets/admin/img/zip.png') }}"
+                                                            src="{{ asset('/assets/admin/img/zip.png') }}"
                                                             alt="">
                                                     </div>
                                                     <div class="flex-grow-1 text-start">
@@ -196,7 +196,7 @@
 
                                 @if (isset($config) && $config)
                                     <div class="text-center max-w-595 mx-auto py-4">
-                                        <img src="{{ asset('/public/assets/admin/img/landing-icon-2.png') }}"
+                                        <img src="{{ asset('/assets/admin/img/landing-icon-2.png') }}"
                                             class="mb-3" alt="">
                                         <p class="m-0">
                                             {{ translate('Currently_you_are_using_6amMart_Default_Admin_Landing_Page_Theme.') }}
@@ -206,7 +206,7 @@
                                     </div>
                                 @else
                                     <div class="text-center max-w-487 mx-auto py-4">
-                                        <img src="{{ asset('/public/assets/admin/img/landing-icon-2.png') }}"
+                                        <img src="{{ asset('/assets/admin/img/landing-icon-2.png') }}"
                                             class="mb-3" alt="">
                                         <p class="m-0">
                                             {{ translate('You_have_no_business_landing_page_to_show._If_user_search_landing_page_URL_they_will_see_404_page.') }}
@@ -243,7 +243,7 @@
                         <div class="item">
                             <div class="mb-20">
                                 <div class="text-center">
-                                    <img src="{{ asset('/public/assets/admin/img/read-instructions.png') }}"
+                                    <img src="{{ asset('/assets/admin/img/read-instructions.png') }}"
                                         alt="" class="mb-20">
                                     <h5 class="modal-title">
                                         {{ translate('If_you_want_to_set_up_your_own_landing_page_please_follow_tha_instructions_below') }}
@@ -284,7 +284,7 @@
 @endsection
 @push('script_2')
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script href="{{ asset('public/assets/admin/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script href="{{ asset('assets/admin/vendor/swiper/swiper-bundle.min.js') }}"></script>
 
     <script>
         $("img.svg").each(function() {

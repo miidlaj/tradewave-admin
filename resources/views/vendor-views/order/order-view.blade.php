@@ -24,7 +24,7 @@
                 <div class="col-sm mb-2 mb-sm-0">
                     <h1 class="page-header-title">
                         <span class="page-header-icon">
-                            <img src="{{ asset('/public/assets/admin/img/shopping-basket.png') }}" class="w--20"
+                            <img src="{{ asset('/assets/admin/img/shopping-basket.png') }}" class="w--20"
                                 alt="">
                         </span>
                         <span>
@@ -347,8 +347,8 @@
                                                         <a class="avatar avatar-xl mr-3"
                                                             href="{{ route('vendor.item.view', $detail->item['id']) }}">
                                                             <img class="img-fluid rounded"
-                                                                src="{{ asset('storage/app/public/product') }}/{{ $detail->item['image'] }}"
-                                                                onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
+                                                                src="{{ asset('storage/product') }}/{{ $detail->item['image'] }}"
+                                                                onerror="this.src='{{ asset('assets/admin/img/160x160/img2.jpg') }}'"
                                                                 alt="Image Description">
                                                         </a>
                                                         <div class="media-body">
@@ -457,8 +457,8 @@
                                                     <div class="media media--sm">
                                                         <div class="avatar avatar-xl mr-3">
                                                             <img class="img-fluid"
-                                                                src="{{ asset('storage/app/public/campaign') }}/{{ $detail->campaign['image'] }}"
-                                                                onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
+                                                                src="{{ asset('storage/campaign') }}/{{ $detail->campaign['image'] }}"
+                                                                onerror="this.src='{{ asset('assets/admin/img/160x160/img2.jpg') }}'"
                                                                 alt="Image Description">
                                                         </div>
                                                         <div class="media-body">
@@ -778,8 +778,8 @@
                                 <div class="media align-items-center customer--information-single" href="javascript:">
                                     <div class="avatar avatar-circle">
                                         <img class="avatar-img"
-                                            onerror="this.src='{{ asset('public/assets/admin/img/160x160/img1.jpg') }}'"
-                                            src="{{ asset('storage/app/public/delivery-man/' . $order->delivery_man->image) }}"
+                                            onerror="this.src='{{ asset('assets/admin/img/160x160/img1.jpg') }}'"
+                                            src="{{ asset('storage/delivery-man/' . $order->delivery_man->image) }}"
                                             alt="Image Description">
                                     </div>
                                     <div class="media-body">
@@ -856,8 +856,8 @@
                                     <div class="col-3">
                                         <img class="img__aspect-1 rounded border w-100" data-toggle="modal"
                                             data-target="#imagemodal{{ $key }}"
-                                            onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}"
-                                            src="{{ asset('storage/app/public/order') . '/' . $img }}">
+                                            onerror="this.src='{{ asset('assets/admin/img/160x160/img2.jpg') }}"
+                                            src="{{ asset('storage/order') . '/' . $img }}">
                                     </div>
                                     <div class="modal fade" id="imagemodal{{ $key }}" tabindex="-1"
                                         role="dialog" aria-labelledby="order_proof_{{ $key }}"
@@ -911,8 +911,8 @@
                             <div class="media align-items-center customer--information-single" href="javascript:">
                                 <div class="avatar avatar-circle">
                                     <img class="avatar-img"
-                                        onerror="this.src='{{ asset('public/assets/admin/img/160x160/img1.jpg') }}'"
-                                        src="{{ asset('storage/app/public/profile/' . $order->customer->image) }}"
+                                        onerror="this.src='{{ asset('assets/admin/img/160x160/img1.jpg') }}'"
+                                        src="{{ asset('storage/profile/' . $order->customer->image) }}"
                                         alt="Image Description">
                                 </div>
                                 <div class="media-body">
@@ -1218,7 +1218,7 @@
                                 @foreach ($proof as $key => $photo)
                                             <div class="spartan_item_wrapper min-w-100px max-w-100px">
                                                 <img class="img--square"
-                                                    src="{{ asset("storage/app/public/order/$photo") }}"
+                                                    src="{{ asset("storage/order/$photo") }}"
                                                     alt="order image">
                                                 <a href="{{ route('vendor.order.remove-proof-image', ['id' => $order['id'], 'name' => $photo]) }}"
                                                     class="spartan_remove_row"><i class="tio-add-to-trash"></i></a>
@@ -1403,7 +1403,7 @@
             });
         }
     </script>
-    <script src="{{ asset('public/assets/admin/js/spartan-multi-image-picker.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/spartan-multi-image-picker.js') }}"></script>
     <script type="text/javascript">
         $(function() {
             $("#coba").spartanMultiImagePicker({
@@ -1413,7 +1413,7 @@
                 groupClassName: 'spartan_item_wrapper min-w-100px max-w-100px',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: "{{ asset('public/assets/admin/img/upload.png') }}",
+                    image: "{{ asset('assets/admin/img/upload.png') }}",
                     width: '100px'
                 },
                 dropFileLabel: "Drop Here",

@@ -17,8 +17,8 @@
         <div class="container">
             <div class="banner-content wow fadeInUp">
                 <h1 class="title">{{ isset($landing_page_text['header_title_1']) ? $landing_page_text['header_title_1'] : '' }}</h1>
-                <img class="w-100" onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
-                    src="{{ asset('storage/app/public/business/' . $logo) }}" alt="">
+                <img class="w-100" onerror="this.src='{{ asset('assets/admin/img/160x160/img2.jpg') }}'"
+                    src="{{ asset('storage/business/' . $logo) }}" alt="">
                 <div class="text">
                     {{ isset($landing_page_text['header_title_2']) ? $landing_page_text['header_title_2'] : '' }}
                 </div>
@@ -1896,7 +1896,7 @@
                     <div class="owl-theme owl-carousel" id="sync2">
                         @foreach ($modules as $key => $item)
                         <div class="item">
-                            <img class="__img-50" src="{{ asset('storage/app/public/module/') }}/{{ isset($item['icon']) ? $item['icon'] : null }}" onerror="this.src='{{asset('public/assets/admin/img/100x100/2.png')}}'" alt="">
+                            <img class="__img-50" src="{{ asset('storage/module/') }}/{{ isset($item['icon']) ? $item['icon'] : null }}" onerror="this.src='{{asset('assets/admin/img/100x100/2.png')}}'" alt="">
                             <div class="txt d-block">{{translate("messages.{$item->module_name}")}}</div>
                         </div>
                         @endforeach
@@ -1915,7 +1915,7 @@
                         </div>
                         <div class="col-lg-6 col-md-8">
                             <div class="venture-img mx-1">
-                                <img src="{{ asset('storage/app/public/module/') }}/{{ isset($item['thumbnail']) ? $item['thumbnail'] : null }}" onerror="this.src='{{asset('public/assets/admin/img/100x100/2.png')}}'" alt="">
+                                <img src="{{ asset('storage/module/') }}/{{ isset($item['thumbnail']) ? $item['thumbnail'] : null }}" onerror="this.src='{{asset('assets/admin/img/100x100/2.png')}}'" alt="">
                             </div>
                         </div>
                     </div>
@@ -1934,7 +1934,7 @@
             <div class="main-category-slider owl-theme owl-carousel">
                 @foreach ($promotion_banner as $item)
                 <div class="category-slide-item"
-                    style="background: url({{ asset('public/assets/landing') }}/image/{{ isset($item['img']) ? $item['img'] : null }}) no-repeat center center / cover">
+                    style="background: url({{ asset('assets/landing') }}/image/{{ isset($item['img']) ? $item['img'] : null }}) no-repeat center center / cover">
                     <div>
                         <h2 class="title">{{$item['title'] ?? ''}}</h2>
                         <div class="text">{{$item['sub_title'] ?? ''}}</div>
@@ -1949,7 +1949,7 @@
 
     <!-- ==== Learn Feature Section Starts Here ==== -->
     <section class="learn-feature-section"
-        style="background: url({{ asset('public/assets/landing/img/learn-feature-bg.svg') }}) no-repeat center center / cover">
+        style="background: url({{ asset('assets/landing/img/learn-feature-bg.svg') }}) no-repeat center center / cover">
         <div class="container position-relative">
             <div class="row gy-5 gx-0 gx-xl-4">
                 <div class=" col-lg-6 pe-lg-5">
@@ -1980,7 +1980,7 @@
                                     <div class="col-12">
                                         <div class="learn-feature-item">
                                             <div class="learn-feature-icon">
-                                                <img src="{{ asset('public/assets/landing') }}/image/{{ $item['img'] }}"
+                                                <img src="{{ asset('assets/landing') }}/image/{{ $item['img'] }}"
                                                  alt="{{$item['title'] ?? ''}}">
                                             </div>
                                             <div class="learn-feature-item-content">
@@ -2002,7 +2002,7 @@
                                     <div class="col-12">
                                         <div class="learn-feature-item">
                                             <div class="learn-feature-icon">
-                                                <img src="{{ asset('public/assets/landing') }}/image/{{ $item['img'] }}" alt="{{$item['title']}}">
+                                                <img src="{{ asset('assets/landing') }}/image/{{ $item['img'] }}" alt="{{$item['title']}}">
                                             </div>
                                             <div class="learn-feature-item-content">
                                                 <h5 class="subttle">{{$item['title'] ?? ''}}</h5>
@@ -2614,7 +2614,7 @@
             @php($join_as_images = isset($join_as_images->value) ? json_decode($join_as_images->value, true) : null)
             <div class="earn-item wow fadeInUp">
                 <div class="earn-item-img"
-                    style="background: url({{ asset('public/assets/landing') }}/image/{{ isset($join_as_images['seller_banner_bg']) ? $join_as_images['seller_banner_bg'] : null }}) no-repeat center center / cover;">
+                    style="background: url({{ asset('assets/landing') }}/image/{{ isset($join_as_images['seller_banner_bg']) ? $join_as_images['seller_banner_bg'] : null }}) no-repeat center center / cover;">
                     <div class="position-relative">
                         @if (isset($landing_page_links['seller_app_url_status']))
                             <a href="{{ isset($landing_page_links['seller_app_url']) ? $landing_page_links['seller_app_url'] : '' }}" class="cmn--btn">{{translate("messages.Download Seller App")}}</a>
@@ -2631,7 +2631,7 @@
             <!-- Earn Money Item -->
             <div class="earn-item wow fadeInUp">
                 <div class="earn-item-img"
-                    style="background: url({{ asset('public/assets/landing') }}/image/{{ isset($join_as_images['deliveryman_banner_bg']) ? $join_as_images['deliveryman_banner_bg'] : null }}) no-repeat center center / cover;">
+                    style="background: url({{ asset('assets/landing') }}/image/{{ isset($join_as_images['deliveryman_banner_bg']) ? $join_as_images['deliveryman_banner_bg'] : null }}) no-repeat center center / cover;">
                     <div class="position-relative">
                         @if (isset($landing_page_links['deliveryman_app_url_status']))
                             <a href="{{ isset($landing_page_links['deliveryman_app_url']) ? $landing_page_links['deliveryman_app_url'] : '' }}" class="cmn--btn me-xl-auto">{{translate("messages.Download Deliveryman App")}}</a>
@@ -3352,8 +3352,8 @@
                 @foreach ($special as $item)
                 <div class="feature-card">
                     <div class="feature-card-icon">
-                        <img src="{{ asset('public/assets/landing') }}/image/{{ isset($item['img']) ? $item['img'] : null }}" alt="{{$item['title']}}"
-                        onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'">
+                        <img src="{{ asset('assets/landing') }}/image/{{ isset($item['img']) ? $item['img'] : null }}" alt="{{$item['title']}}"
+                        onerror="this.src='{{ asset('assets/admin/img/160x160/img2.jpg') }}'">
                     </div>
                     <div class="feature-card-cont">
                         <h4 class="subtitle">
@@ -3532,8 +3532,8 @@
                     </div>
                     @php($fav = \App\Models\BusinessSetting::where(['key' => 'icon'])->first()->value ?? '')
                     <div class="right-side d-flex word-nowrap align-items-center">
-                        <img onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
-                        src="{{ asset('storage/app/public/business/' . $fav) }}" alt="">
+                        <img onerror="this.src='{{ asset('assets/admin/img/160x160/img2.jpg') }}'"
+                        src="{{ asset('storage/business/' . $fav) }}" alt="">
                         {{translate("messages.Still increasing")}}
                     </div>
                 </div>
@@ -3565,7 +3565,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-9">
-                    <img class="mw-100" src="{{ asset('public/assets/landing') }}/image/{{ isset($download['img']) ? $download['img'] : null }}" alt="">
+                    <img class="mw-100" src="{{ asset('assets/landing') }}/image/{{ isset($download['img']) ? $download['img'] : null }}" alt="">
                 </div>
             </div>
         </div>
@@ -3595,14 +3595,14 @@
                         </blockquote>
                         <div class="d-flex align-items-center justify-content-between">
                             <div class="user">
-                                <img src="{{ asset('public/assets/landing') }}/image/{{ $data['img'] }}" alt="">
+                                <img src="{{ asset('assets/landing') }}/image/{{ $data['img'] }}" alt="">
                                 <div>
                                     <h6 class="name">{{ $data['name'] }}</h6>
                                     <span class="designation">{{ $data['position'] }}</span>
                                 </div>
                             </div>
                             @if (isset($data['brand_image']))
-                            <img style="max-height: 35px; max-width:75px" src="{{ asset('public/assets/landing') }}/image/{{ $data['brand_image'] }}" alt="">
+                            <img style="max-height: 35px; max-width:75px" src="{{ asset('assets/landing') }}/image/{{ $data['brand_image'] }}" alt="">
                             @endif
                         </div>
                     </div>

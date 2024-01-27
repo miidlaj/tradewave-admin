@@ -11,7 +11,7 @@
         <div class="page-header">
             <h1 class="page-header-title mr-3">
                 <span class="page-header-icon">
-                    <img src="{{ asset('public/assets/admin/img/business.png') }}" class="w--26" alt="">
+                    <img src="{{ asset('assets/admin/img/business.png') }}" class="w--26" alt="">
                 </span>
                 <span>
                     {{translate('business_setup')}}
@@ -43,7 +43,7 @@
                                                 <span class="form-label-secondary text-danger d-flex"
                                                     data-toggle="tooltip" data-placement="right"
                                                     data-original-title="{{ translate('messages.Customers_can_give_tips_to_deliverymen_during_checkout_from_the_Customer_App_&_Website._Admin_has_no_commission_on_it.') }}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.dm_tips_model_hint') }}"> * </span>
                                             </span>
                                             <input type="checkbox" onclick="toogleModal(event,'dm_tips_status','dm-tips-on.png','dm-tips-off.png','{{translate('messages.Want_to_enable')}} <strong>{{translate('messages.Tips_for_Deliveryman_feature?')}}</strong>','{{translate('messages.Want_to_disable')}} <strong>{{translate('messages.Tips_for_Deliveryman_feature?')}}</strong>',`<p>{{translate('messages.If_you_enable_this,_Customers_can_give_tips_to_a_deliveryman_during_checkout.')}}</p>`,`<p>{{translate('messages.If_you_disable_this,_the_Tips_for_Deliveryman_feature_will_be_hidden_from_the_Customer_App_and_Website.')}}</p>`)" class="toggle-switch-input" value="1"
@@ -69,7 +69,7 @@
                                                 <span class="form-label-secondary text-danger d-flex"
                                                     data-toggle="tooltip" data-placement="right"
                                                     data-original-title="{{ translate('messages.With_this_feature,_Deliverymen_can_see_their_earnings_on_a_specific_order_while_accepting_it.') }}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.customer_varification_toggle') }}"> *
                                                 </span>
                                             </span>
@@ -97,7 +97,7 @@
                                                 <span class="form-label-secondary text-danger d-flex"
                                                     data-toggle="tooltip" data-placement="right"
                                                     data-original-title="{{ translate('messages.With_this_feature,_deliverymen_can_register_themselves_from_the_Customer_App,_Website_or_Deliveryman_App_or_Admin_Landing_Page._The_admin_will_receive_an_email_notification_and_can_accept_or_reject_the_request.') }}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.dm_self_registration') }}"> * </span>
                                             </span>
                                             <input type="checkbox" onclick="toogleModal(event,'dm_self_registration1','dm-self-reg-on.png','dm-self-reg-off.png','{{translate('messages.Want_to_enable')}} <strong>{{translate('messages.Deliveryman_Self_Registration?')}}</strong>','{{translate('messages.Want_to_disable')}} <strong>{{translate('messages.Deliveryman_Self_Registration?')}}</strong>',`<p>{{translate('messages.If_you_enable_this,_users_can_register_as_Deliverymen_from_the_Customer_App,_Website_or_Deliveryman_App_or_Admin_Landing_Page.')}}</p>`,`<p>{{translate('messages.If_you_disable_this,_this_feature_will_be_hidden_from_the_Customer_App,_Website_or_Deliveryman_App_or_Admin_Landing_Page.')}}</p>`)" class="toggle-switch-input" value="1"
@@ -119,7 +119,7 @@
                                                 class="text-danger d-flex align-items-center mt-1"> *<span class="form-label-secondary"
                                                     data-toggle="tooltip" data-placement="right"
                                                     data-original-title="{{ translate('messages.Set_the_maximum_order_limit_a_Deliveryman_can_take_at_a_time.') }}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.dm_maximum_order_hint') }}"></span>
                                                 </small>
                                             </div>
@@ -138,7 +138,7 @@
                                             <span class="form-label-secondary"
                                             data-toggle="tooltip" data-placement="right"
                                             data-original-title="{{ translate('messages.Admin_can_enable/disable_Deliveryman’s_order_cancellation_option_in_the_respective_app.') }}"><img
-                                                src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                 alt="{{ translate('messages.dm_cancel_order_hint') }}"></span></label>
                                         <div class="resturant-type-group border">
                                             <label class="form-check form--check mr-2 mr-md-4">
@@ -174,7 +174,7 @@
                                                 <span class="form-label-secondary text-danger d-flex"
                                                     data-toggle="tooltip" data-placement="right"
                                                     data-original-title="{{ translate('messages.If_enabled,_deliverymen_will_see_an_option_to_take_pictures_of_the_delivered_products_when_he_swipes_the_delivery_confirmation_slide.') }}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.dm_picture_upload_status') }}"> * </span>
                                             </span>
                                             <input type="checkbox" onclick="toogleModal(event,'dm_picture_upload_status','dm-self-reg-on.png','dm-self-reg-off.png','{{translate('messages.Want_to_enable')}} <strong>{{translate('messages.picture_upload_before_complete?')}}</strong>','{{translate('messages.Want_to_disable')}} <strong>{{translate('messages.picture_upload_before_complete?')}}</strong>',`<p>{{translate('messages.If_you_enable_this,_delivery_man_can_upload_order_proof_before_order_delivery.')}}</p>`,`<p>{{translate('messages.If_you_disable_this,_this_feature_will_be_hidden_from_the_delivery_man_app.')}}</p>`)" class="toggle-switch-input" value="1"
@@ -204,7 +204,7 @@
                                                 <span class="form-label-secondary text-danger d-flex"
                                                       data-toggle="tooltip" data-placement="right"
                                                       data-original-title="{{ translate('If_enabled,_delivery_men_will_be_automatically_suspended_by_the_system_when_their_‘Cash_in_Hand’_limit_is_exceeded.') }}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.cash_in_hand_overflow') }}"> *
                                                 </span>
                                             </span>
@@ -225,7 +225,7 @@
                                             <span class="line--limit-1">
                                                 {{translate('Delivery_Man_Maximum_Cash_in_Hand')}} ({{ \App\CentralLogics\Helpers::currency_symbol() }})
                                             </span>
-                                            <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate('Deliveryman_can_not_accept_any_orders_when_the_Cash_In_Hand_limit_exceeds_and_must_deposit_the_amount_to_the_admin_before_accepting_new_orders')}}" class="input-label-secondary"><img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.dm_maximum_order_hint') }}"></span>
+                                            <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate('Deliveryman_can_not_accept_any_orders_when_the_Cash_In_Hand_limit_exceeds_and_must_deposit_the_amount_to_the_admin_before_accepting_new_orders')}}" class="input-label-secondary"><img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.dm_maximum_order_hint') }}"></span>
                                         </label>
                                         <input type="number" name="dm_max_cash_in_hand" class="form-control"
                                                id="dm_max_cash_in_hand" min="0" step=".001"
@@ -248,7 +248,7 @@
                                             <span class="form-label-secondary"
                                                   data-toggle="tooltip" data-placement="right"
                                                   data-original-title="{{ translate('Enter_the_minimum_cash_amount_delivery_men_can_pay') }}"><img
-                                                    src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                    src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                     alt="{{ translate('messages.dm_cancel_order_hint') }}"></span>
                                         </label>
                                         <input type="number" name="min_amount_to_pay_dm" class="form-control"

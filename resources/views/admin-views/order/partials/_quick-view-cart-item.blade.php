@@ -10,8 +10,8 @@
         <!-- Product gallery-->
         <div class="d-flex align-items-center justify-content-center active">
             <img class="img-responsive initial--20"
-                src="{{ asset($item_type == 'item' ? 'storage/app/public/product' : 'storage/app/public/campaign') }}/{{ $product['image'] }}"
-                onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'" alt="Product image"
+                src="{{ asset($item_type == 'item' ? 'storage/product' : 'storage/campaign') }}/{{ $product['image'] }}"
+                onerror="this.src='{{ asset('assets/admin/img/160x160/img2.jpg') }}'" alt="Product image"
                 width="">
             <div class="cz-image-zoom-pane"></div>
         </div>

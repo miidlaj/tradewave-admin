@@ -3,7 +3,7 @@
 @section('title',translate('messages.Add new campaign'))
 
 @push('css_or_js')
-    <link href="{{asset('public/assets/admin/css/tags-input.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/admin/css/tags-input.min.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/campaign.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/campaign.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                     {{translate('messages.add_new_campaign')}}
@@ -134,7 +134,7 @@
 
                             <center id="image-viewer-section" class="py-3 my-auto">
                                 <img class="img--120" id="viewer"
-                                        src="{{asset('public/assets/admin/img/100x100/2.png')}}" alt="banner image"/>
+                                        src="{{asset('assets/admin/img/100x100/2.png')}}" alt="banner image"/>
                             </center>
                             <div class="custom-file">
                                 <input type="file" name="image" id="customFileEg1" class="custom-file-input"
@@ -195,7 +195,7 @@
                                 <div class="col-md-3 col-sm-6" id="addon_input">
                                     <div class="form-group mb-0">
                                         <label class="input-label" for="exampleFormControlSelect1">{{translate('messages.addon')}}<span
-                                                class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('messages.store_required_warning')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.store_required_warning')}}"></span></label>
+                                                class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('messages.store_required_warning')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.store_required_warning')}}"></span></label>
                                         <select name="addon_ids[]" id="add_on" class="form-control js-select2-custom" multiple="multiple">
 
                                         </select>
@@ -218,7 +218,7 @@
                                     <div class="form-group mb-0">
                                         <label class="input-label" for="exampleFormControlSelect1">{{translate('messages.sub_category')}}
                                             <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('messages.category_required_warning')}}">
-                                                <img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.category_required_warning')}}">
+                                                <img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.category_required_warning')}}">
                                             </span>
                                         </label>
                                         <select name="sub_category_id" id="sub-categories" class="js-data-example-ajax form-control" onchange="getRequest('{{url('/')}}/admin/item/get-categories?parent_id='+this.value,'sub-sub-categories')">
@@ -406,7 +406,7 @@
 @endsection
 
 @push('script_2')
-    <script src="{{asset('public/assets/admin')}}/js/tags-input.min.js"></script>
+    <script src="{{asset('assets/admin')}}/js/tags-input.min.js"></script>
     <script>
         $(document).ready(function () {
             $('#food_variation_section').hide();

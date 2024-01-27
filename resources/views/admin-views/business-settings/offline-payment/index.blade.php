@@ -10,7 +10,7 @@
         <!-- Page Title -->
         <div class="mb-4 pb-2">
             <h2 class="h1 mb-0 text-capitalize d-flex align-items-center gap-2">
-                <img src="{{asset('/public/assets/admin/img/3rd-party.png')}}" alt="">
+                <img src="{{asset('/assets/admin/img/3rd-party.png')}}" alt="">
                 {{translate('Offline_Payment_Method_Setup')}}
             </h2>
         </div>
@@ -142,7 +142,7 @@
                                 </div>
                             @else
                             <div class="empty--data">
-                                <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                                <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                                 <h5>
                                     {{translate('no_data_found')}}
                                 </h5>

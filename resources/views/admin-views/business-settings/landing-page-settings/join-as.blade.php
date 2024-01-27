@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('public/assets/admin/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/admin/css/croppie.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -13,7 +13,7 @@
     <div class="page-header pb-0">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('public/assets/admin/img/landing.png')}}" class="w--26" alt="">
+                <img src="{{asset('assets/admin/img/landing.png')}}" class="w--26" alt="">
             </span>
             <span>
                 {{ translate('messages.landing_page_settings') }}
@@ -43,8 +43,8 @@
                         <label class="form-group d-block">
                             <span class="input-label text-center" >{{translate('messages.seller_banner_background')}}<small class="text-danger"> ( {{translate('messages.size')}}: 1600 X 400 px )</small></span>
                             <center id="image-viewer-section5" class="pt-3 img--200 mx-auto">
-                                <img class="border rounded w-100" id="viewer5" src="{{asset('public/assets/landing')}}/image/{{isset($landing_page_images['seller_banner_bg'])?$landing_page_images['seller_banner_bg']:'double_screen_image.png'}}"
-                                        onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'"
+                                <img class="border rounded w-100" id="viewer5" src="{{asset('assets/landing')}}/image/{{isset($landing_page_images['seller_banner_bg'])?$landing_page_images['seller_banner_bg']:'double_screen_image.png'}}"
+                                        onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'"
                                         alt=""/>
                             </center>
                             <input type="file" name="seller_banner_bg" id="customFileEg5" class="custom-file-input" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" hidden>
@@ -63,8 +63,8 @@
                         <label class="form-group d-block">
                             <span class="input-label text-center" >{{translate('messages.deliveryman_banner_background')}}<small class="text-danger"> ( {{translate('messages.size')}}: 1600 X 400 px )</small></span>
                             <center id="image-viewer-section6" class="pt-3 img--200 mx-auto">
-                                <img class="border rounded w-100" id="viewer6" src="{{asset('public/assets/landing')}}/image/{{isset($landing_page_images['deliveryman_banner_bg'])?$landing_page_images['deliveryman_banner_bg']:'double_screen_image.png'}}"
-                                        onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'"
+                                <img class="border rounded w-100" id="viewer6" src="{{asset('assets/landing')}}/image/{{isset($landing_page_images['deliveryman_banner_bg'])?$landing_page_images['deliveryman_banner_bg']:'double_screen_image.png'}}"
+                                        onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'"
                                         alt=""/>
                             </center>
                             <input type="file" name="deliveryman_banner_bg" id="customFileEg6" class="custom-file-input" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" hidden>

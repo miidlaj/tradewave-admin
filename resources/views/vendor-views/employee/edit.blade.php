@@ -10,7 +10,7 @@
     <div class="page-header">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('public/assets/admin/img/edit.png')}}" class="w--26" alt="">
+                <img src="{{asset('assets/admin/img/edit.png')}}" class="w--26" alt="">
             </span>
             <span>
                 {{translate('messages.Employee_update')}}
@@ -67,8 +67,8 @@
 
                                 <center class="mb-auto">
                                     <img class="store-banner" id="viewer"
-                                    onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
-                                    src="{{asset('storage/app/public/vendor')}}/{{$e['image']}}" alt="Employee thumbnail"/>
+                                    onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                                    src="{{asset('storage/vendor')}}/{{$e['image']}}" alt="Employee thumbnail"/>
                                 </center>
 
                                 <div class="form-group mt-3 mb-0">
@@ -101,7 +101,7 @@
                                     <div class="col-md-4">
                                         <div class="js-form-message form-group mb-0">
                                             <label class="input-label" for="signupSrPassword">{{translate('messages.password')}}<span class="form-label-secondary" data-toggle="tooltip" data-placement="right"
-        data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span></label>
+        data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span></label>
 
                                             <div class="input-group input-group-merge">
                                                 <input type="password" class="js-toggle-password form-control" name="password" id="signupSrPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"
@@ -213,7 +213,7 @@
     </script>
             <script>
                 $('#reset_btn').click(function(){
-                    $('#viewer').attr('src','{{asset('storage/app/public/vendor')}}/{{$e['image']}}');
+                    $('#viewer').attr('src','{{asset('storage/vendor')}}/{{$e['image']}}');
                 })
             </script>
 @endpush

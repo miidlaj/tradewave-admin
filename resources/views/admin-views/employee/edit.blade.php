@@ -10,7 +10,7 @@
     <div class="page-header">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('public/assets/admin/img/edit.png')}}" class="w--26" alt="">
+                <img src="{{asset('assets/admin/img/edit.png')}}" class="w--26" alt="">
             </span>
             <span>
                 {{translate('messages.Employee_update')}}
@@ -82,8 +82,8 @@
                         <label class="h-100 d-flex flex-column">
                             <center class="py-3 my-auto">
                                 <img class="img--100" id="viewer"
-                                onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
-                                src="{{asset('storage/app/public/admin')}}/{{$e['image']}}" alt="Employee thumbnail"/>
+                                onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
+                                src="{{asset('storage/admin')}}/{{$e['image']}}" alt="Employee thumbnail"/>
                             </center>
                             <div class="custom-file">
                                 <input type="file" name="image" id="customFileUpload" class="custom-file-input"
@@ -115,7 +115,7 @@
                     <div class="col-md-4">
                         <div class="js-form-message form-group mb-0">
                             <label class="input-label" for="signupSrPassword">{{translate('messages.password')}}<span class="form-label-secondary" data-toggle="tooltip" data-placement="right"
-        data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span></label>
+        data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span></label>
 
                             <div class="input-group input-group-merge">
                                 <input type="password" class="js-toggle-password form-control" name="password" id="signupSrPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"
@@ -221,7 +221,7 @@
     </script>
     <script>
         $('#reset_btn').click(function(){
-            $('#viewer').attr('src', "{{asset('storage/app/public/admin')}}/{{$e['image']}}') }}");
+            $('#viewer').attr('src', "{{asset('storage/admin')}}/{{$e['image']}}') }}");
             $('#customFileUpload').val(null);
             $('#zone_id').val("{{ $e->zone_id  }}").trigger('change');
             $('#role_id').val("{{ $e['role_id'] }}").trigger('change');

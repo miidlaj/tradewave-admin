@@ -54,7 +54,7 @@
                     @php($total_store = isset($total_store) ? $total_store : 0)
                     <h4 class="title">{{$total_store}}</h4>
                     <span class="subtitle">{{translate('messages.total_stores')}}</span>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/total-store.png')}}" alt="store">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/total-store.png')}}" alt="store">
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6">
@@ -63,7 +63,7 @@
                     @php($active_stores = isset($active_stores) ? $active_stores : 0)
                     <h4 class="title">{{$active_stores}}</h4>
                     <span class="subtitle">{{translate('messages.active_stores')}}</span>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/active-store.png')}}" alt="store">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/active-store.png')}}" alt="store">
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6">
@@ -74,7 +74,7 @@
                     @php($inactive_stores = isset($inactive_stores) ? $inactive_stores : 0)
                     <h4 class="title">{{$inactive_stores}}</h4>
                     <span class="subtitle">{{translate('messages.inactive_stores')}}</span>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/close-store.png')}}" alt="store">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/close-store.png')}}" alt="store">
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6">
@@ -82,7 +82,7 @@
                     @php($data = \App\Models\Store::where('created_at', '>=', now()->subDays(30)->toDateTimeString())->where('module_id', Config::get('module.current_module_id'))->count())
                     <h4 class="title">{{$data}}</h4>
                     <span class="subtitle">{{translate('messages.newly_joined_stores')}}</span>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/add-store.png')}}" alt="store">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/add-store.png')}}" alt="store">
                 </div>
             </div>
         </div>
@@ -150,13 +150,13 @@
                             <span class="dropdown-header">{{ translate('messages.download_options') }}</span>
                             <a id="export-excel" class="dropdown-item" href="{{route('admin.store.export', ['type'=>'excel',request()->getQueryString()])}}">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/components/excel.svg"
+                                    src="{{ asset('assets/admin') }}/svg/components/excel.svg"
                                     alt="Image Description">
                                 {{ translate('messages.excel') }}
                             </a>
                             <a id="export-csv" class="dropdown-item" href="{{route('admin.store.export', ['type'=>'csv',request()->getQueryString()])}}">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/components/placeholder-csv-format.svg"
+                                    src="{{ asset('assets/admin') }}/svg/components/placeholder-csv-format.svg"
                                     alt="Image Description">
                                 .{{ translate('messages.csv') }}
                             </a>
@@ -198,8 +198,8 @@
                             <td>
                                 <div>
                                     <a href="{{route('admin.store.view', $store->id)}}" class="table-rest-info" alt="view store">
-                                    <img class="img--60 circle" onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
-                                            src="{{asset('storage/app/public/store')}}/{{$store['logo']}}">
+                                    <img class="img--60 circle" onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                                            src="{{asset('storage/store')}}/{{$store['logo']}}">
                                         <div class="info"><div class="text--title">
                                             {{Str::limit($store->name,20,'...')}}
                                             </div>
@@ -283,7 +283,7 @@
                 </div>
                 @if(count($stores) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                    <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>

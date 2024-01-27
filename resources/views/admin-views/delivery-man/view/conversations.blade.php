@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title text-break">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/delivery-man.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/delivery-man.png')}}" class="w--26" alt="">
                 </span>
                 <span>{{$dm['f_name'].' '.$dm['l_name']}}</span>
             </h1>

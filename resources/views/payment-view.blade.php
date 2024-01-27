@@ -18,17 +18,17 @@
     <link rel="shortcut icon" href="favicon.ico">
     <!-- Font -->
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/vendor.min.css">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/vendor/icon-set/style.css">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/custom.css">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/vendor.min.css">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/vendor/icon-set/style.css">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/custom.css">
     <!-- CSS Front Template -->
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/theme.minc619.css?v=1.0">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/style.css">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/theme.minc619.css?v=1.0">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/style.css">
 
     <script
-        src="{{asset('public/assets/admin')}}/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/toastr.css">
+        src="{{asset('assets/admin')}}/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/toastr.css">
     {{--stripe--}}
     <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
     <script src="https://js.stripe.com/v3/"></script>
@@ -38,7 +38,7 @@
 {{--loader--}}
 <div id="loading" class="initial-hidden">
     <div class="loading-inner">
-        <img width="200" src="{{asset('public/assets/front-end/img/loader.gif')}}">
+        <img width="200" src="{{asset('assets/front-end/img/loader.gif')}}">
     </div>
 </div>
 {{--loader--}}
@@ -65,7 +65,7 @@
                                         <input type="hidden" value="{{ csrf_token() }}" name="_token"/>
                                         <button class="btn btn-block click-if-alone" type="submit">
                                             <img width="100"
-                                                 src="{{asset('public/assets/admin/img/sslcomz.png')}}"/>
+                                                 src="{{asset('assets/admin/img/sslcomz.png')}}"/>
                                         </button>
                                     </form>
                                 </div>
@@ -90,7 +90,7 @@
                                                 data-buttontext="Pay {{$order->order_amount - $order->partially_paid_amount}} {{\App\CentralLogics\Helpers::currency_code()}}"
                                                 data-name="{{\App\Models\BusinessSetting::where(['key'=>'business_name'])->first()->value}}"
                                                 data-description="{{$order['id']}}"
-                                                data-image="{{asset('storage/app/public/business/'.\App\Models\BusinessSetting::where(['key'=>'logo'])->first()->value)}}"
+                                                data-image="{{asset('storage/business/'.\App\Models\BusinessSetting::where(['key'=>'logo'])->first()->value)}}"
                                                 data-prefill.name="{{$order->customer->f_name}}"
                                                 data-prefill.email="{{$order->customer->email}}"
                                                 data-theme.color="#ff7529">
@@ -99,7 +99,7 @@
                                     <button class="btn btn-block click-if-alone" type="button"
                                             onclick="{{\App\CentralLogics\Helpers::currency_code()=='INR'?"$('.razorpay-payment-button').click()":"toastr.error('Your currency is not supported by Razor Pay.')"}}">
                                         <img width="100"
-                                             src="{{asset('public/assets/admin/img/razorpay.png')}}"/>
+                                             src="{{asset('assets/admin/img/razorpay.png')}}"/>
                                     </button>
                                 </div>
                             </div>
@@ -116,7 +116,7 @@
                                           action="{{route('paypal.pay')}}">
                                         <button class="btn btn-block click-if-alone" type="submit">
                                             <img width="100"
-                                                 src="{{asset('public/assets/admin/img/paypal.png')}}"/>
+                                                 src="{{asset('assets/admin/img/paypal.png')}}"/>
                                         </button>
                                         <input type="hidden" name="order_id" value="{{$order->id}}">
                                     </form>
@@ -133,7 +133,7 @@
                                 <div class="card-body py-0 h-70px">
                                     @php($config=\App\CentralLogics\Helpers::get_business_settings('stripe'))
                                     <button class="btn btn-block click-if-alone" type="button" id="checkout-button">
-                                        <img width="100" src="{{asset('public/assets/admin/img/stripe.png')}}"/>
+                                        <img width="100" src="{{asset('assets/admin/img/stripe.png')}}"/>
                                     </button>
 
                                     <script type="text/javascript">
@@ -173,7 +173,7 @@
                                         <input type="hidden" value="{{ $order->customer->email }}" id="email-address" required />
                                         <input type="hidden" value="{{ round($order->order_amount - $order->partially_paid_amount )}}" id="amount" required />
                                         <button class="btn btn-block click-if-alone" type="submit" onclick="payWithPaystack()">
-                                          <img width="100" src="{{asset('public/assets/admin/img/paystack.png')}}"/>
+                                          <img width="100" src="{{asset('assets/admin/img/paystack.png')}}"/>
                                         </button>
                                       </form>
                                 </div>
@@ -213,7 +213,7 @@
                                     <button class="btn btn-block click-if-alone" type="button"
                                             onclick="{{\App\CentralLogics\Helpers::currency_code()=='MYR'?"document.order.submit()":"toastr.error('Your currency is not supported by Senang Pay.')"}}">
                                         <img width="100"
-                                             src="{{asset('public/assets/admin/img/senangpay.png')}}"/>
+                                             src="{{asset('assets/admin/img/senangpay.png')}}"/>
                                     </button>
                                 </div>
                             </div>
@@ -230,7 +230,7 @@
 
                                         <button class="btn btn-block click-if-alone" type="submit">
                                             <img width="200"
-                                                 src="{{asset('public/assets/admin/img/fluterwave.png')}}"/>
+                                                 src="{{asset('assets/admin/img/fluterwave.png')}}"/>
                                         </button>
                                     </form>
                                 </div>
@@ -245,7 +245,7 @@
                                 <div class="card-body pt-2 h--70px">
                                     <a class="btn btn-block click-if-alone" href="{{route('mercadopago.index',request()->getQueryString())}}">
                                         <img width="150"
-                                                src="{{asset('public/assets/admin/img/MercadoPago_(Horizontal).svg')}}"/>
+                                                src="{{asset('assets/admin/img/MercadoPago_(Horizontal).svg')}}"/>
                                     </a>
                                 </div>
                             </div>
@@ -263,7 +263,7 @@
                                         {{ csrf_field() }}
                                         <button class="btn btn-block click-if-alone" type="submit">
                                             <img width="150"
-                                                src="{{asset('public/assets/admin/img/paymob.png')}}"/>
+                                                src="{{asset('assets/admin/img/paymob.png')}}"/>
                                         </button>
                                     </form>
                                 </div>
@@ -277,10 +277,10 @@
                             <div class="card">
                                 <div class="card-body h--100px">
                                     {{-- <button class="btn btn-block click-if-alone" id="bKash_button" onclick="BkashPayment()">
-                                        <img width="100" src="{{asset('public/assets/admin/img/bkash.png')}}"/>
+                                        <img width="100" src="{{asset('assets/admin/img/bkash.png')}}"/>
                                     </button> --}}
                                     <a class="btn btn-block click-if-alone" href="{{route('bkash-make-payment',request()->getQueryString())}}">
-                                        <img class="initial--40" src="{{asset('public/assets/admin/img/bkash.png')}}"/>
+                                        <img class="initial--40" src="{{asset('assets/admin/img/bkash.png')}}"/>
                                     </a>
                                 </div>
                             </div>
@@ -293,7 +293,7 @@
                             <div class="card">
                                 <div class="card-body h--100px">
                                     <button class="btn btn-block click-if-alone mt--n-11" onclick="location.href='{{route('paytabs-payment')}}'">
-                                        <img width="150" src="{{asset('public/assets/admin/img/paytabs.png')}}"/>
+                                        <img width="150" src="{{asset('assets/admin/img/paytabs.png')}}"/>
                                     </button>
                                 </div>
                             </div>
@@ -306,7 +306,7 @@
                             <div class="card">
                                 <div class="card-body h--100px">
                                     <a class="btn btn-block click-if-alone" href="{{route('paytm-payment',request()->getQueryString())}}">
-                                        <img class="initial--40" src="{{asset('public/assets/admin/img/paytm.png')}}"/>
+                                        <img class="initial--40" src="{{asset('assets/admin/img/paytm.png')}}"/>
                                     </a>
                                 </div>
                             </div>
@@ -320,7 +320,7 @@
                                 <div class="card-body h--100px">
                                     <a class="btn btn-block click-if-alone" href="{{route('liqpay-payment',request()->getQueryString())}}">
                                         <img class="initial--41"
-                                            src="{{asset('public/assets/admin/img/liqpay4.png')}}"/>
+                                            src="{{asset('assets/admin/img/liqpay4.png')}}"/>
                                     </a>
                                 </div>
                             </div>
@@ -334,12 +334,12 @@
 </div>
 
 <!-- JS Front -->
-<script src="{{asset('public/assets/admin')}}/js/custom.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/vendor.min.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/theme.min.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/sweet_alert.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/toastr.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/bootstrap.min.js"></script>
+<script src="{{asset('assets/admin')}}/js/custom.js"></script>
+<script src="{{asset('assets/admin')}}/js/vendor.min.js"></script>
+<script src="{{asset('assets/admin')}}/js/theme.min.js"></script>
+<script src="{{asset('assets/admin')}}/js/sweet_alert.js"></script>
+<script src="{{asset('assets/admin')}}/js/toastr.js"></script>
+<script src="{{asset('assets/admin')}}/js/bootstrap.min.js"></script>
 
 {!! Toastr::message() !!}
 

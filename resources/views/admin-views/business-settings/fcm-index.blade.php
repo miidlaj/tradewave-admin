@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/firebase.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/firebase.png')}}" class="w--26" alt="">
                 </span>
                 <span>{{translate('messages.firebase_push_notification_setup')}}
                 </span>
@@ -31,13 +31,13 @@
                     <ul class="nav nav-tabs nav--tabs border-0 gap-2">
                         <li class="nav-item mr-2 mr-md-4">
                             <a href="{{ route('admin.business-settings.fcm-index') }}" class="nav-link pb-2 px-0 pb-sm-3 active" data-slide="1">
-                                <img src="{{asset('/public/assets/admin/img/notify.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/notify.png')}}" alt="">
                                 <span>{{translate('Push Notification')}}</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('admin.business-settings.fcm-config') }}" class="nav-link pb-2 px-0 pb-sm-3" data-slide="2">
-                                <img src="{{asset('/public/assets/admin/img/firebase2.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/firebase2.png')}}" alt="">
                                 <span>{{translate('Firebase Configuration')}}</span>
                             </a>
                         </li>
@@ -692,7 +692,7 @@
                             <div class="item">
                                 <div class="mb-20">
                                     <div class="text-center">
-                                        <img src="{{asset('/public/assets/admin/img/firebase/slide-1.png')}}" alt="" class="mb-20">
+                                        <img src="{{asset('/assets/admin/img/firebase/slide-1.png')}}" alt="" class="mb-20">
                                         <h5 class="modal-title">{{translate('Go to Firebase Console')}}</h5>
                                     </div>
                                     <ul>
@@ -711,7 +711,7 @@
                             <div class="item">
                                 <div class="mb-20">
                                     <div class="text-center">
-                                        <img src="{{asset('/public/assets/admin/img/firebase/slide-2.png')}}" alt="" class="mb-20">
+                                        <img src="{{asset('/assets/admin/img/firebase/slide-2.png')}}" alt="" class="mb-20">
                                         <h5 class="modal-title">{{translate('Navigate to Project Settings')}}</h5>
                                     </div>
                                     <ul>
@@ -727,7 +727,7 @@
                             <div class="item">
                                 <div class="mb-20">
                                     <div class="text-center">
-                                        <img src="{{asset('/public/assets/admin/img/firebase/slide-3.png')}}" alt="" class="mb-20">
+                                        <img src="{{asset('/assets/admin/img/firebase/slide-3.png')}}" alt="" class="mb-20">
                                         <h5 class="modal-title">{{translate('Obtain All The Information Asked!')}}</h5>
                                     </div>
                                     <ul>
@@ -771,7 +771,7 @@
                             <div class="item">
                                 <div class="mb-20">
                                     <div class="text-center">
-                                        <img src="{{asset('/public/assets/admin/img/email-templates/3.png')}}" alt="" class="mb-20">
+                                        <img src="{{asset('/assets/admin/img/email-templates/3.png')}}" alt="" class="mb-20">
                                         <h5 class="modal-title">{{translate('Write_a_message_in_the_Notification_Body')}}</h5>
                                     </div>
                                     <p>
@@ -793,7 +793,7 @@
                             <div class="item">
                                 <div class="mb-20">
                                     <div class="text-center">
-                                        <img src="{{asset('/public/assets/admin/img/firebase/slide-4.png')}}" alt="" class="mb-20">
+                                        <img src="{{asset('/assets/admin/img/firebase/slide-4.png')}}" alt="" class="mb-20">
                                         <h5 class="modal-title">{{translate('Please Visit the Docs to Set FCM on Mobile Apps')}}</h5>
                                     </div>
                                     <div class="text-center">
@@ -825,13 +825,13 @@
                     <div class="modal-body pt-0">
                         <div class="text-center mb-20">
                             <!-- Warning Content -->
-                            <!-- <img src="{{asset('/public/assets/admin/img/modal/pending-order-off.png')}}" alt="" class="mb-20">
+                            <!-- <img src="{{asset('/assets/admin/img/modal/pending-order-off.png')}}" alt="" class="mb-20">
                             <h5 class="modal-title">{{translate('By Turning OFF Order ')}}<strong class="font-bold">{{translate('Pending Message')}}</strong></h5>
                             <p class="txt">
                                 {{translate("User can't get a clear message to know that order is pending or not")}}
                             </p> -->
                             <!-- Success Content -->
-                            <img src="{{asset('/public/assets/admin/img/modal/pending-order-on.png')}}" alt="" class="mb-20">
+                            <img src="{{asset('/assets/admin/img/modal/pending-order-on.png')}}" alt="" class="mb-20">
                             <h5 class="modal-title">{{translate('By Turning ON Order ')}} <strong class="font-bold">{{translate('Pending Message')}}</strong></h5>
                             <p class="txt">
                                 {{translate("User will get a clear message to know that order is pending")}}

@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/items.png')}}" class="w--22" alt="">
+                    <img src="{{asset('assets/admin/img/items.png')}}" class="w--22" alt="">
                 </span>
                 <span>
                     {{translate('messages.items_bulk_import')}}
@@ -66,12 +66,12 @@
                     <div class="btn--container justify-content-center export--template-btns">
 
                         @if ($store_data->module->module_type == 'food')
-                            <a href="{{asset('public/assets/restaurant_panel/foods_bulk_format.xlsx')}}" download="" class="btn btn-dark">{{translate('template_with_existing_data')}}</a>
+                            <a href="{{asset('assets/restaurant_panel/foods_bulk_format.xlsx')}}" download="" class="btn btn-dark">{{translate('template_with_existing_data')}}</a>
                         @else
-                            <a href="{{asset('public/assets/restaurant_panel/items_bulk_format.xlsx')}}" download="" class="btn btn-dark">{{translate('template_with_existing_data')}}</a>
+                            <a href="{{asset('assets/restaurant_panel/items_bulk_format.xlsx')}}" download="" class="btn btn-dark">{{translate('template_with_existing_data')}}</a>
                         @endif
 
-                        <a href="{{asset('public/assets/restaurant_panel/items_bulk_format_nodata.xlsx')}}" download="" class="btn btn-dark">{{translate('template_without_data')}}</a>
+                        <a href="{{asset('assets/restaurant_panel/items_bulk_format_nodata.xlsx')}}" download="" class="btn btn-dark">{{translate('template_without_data')}}</a>
                     </div>
                 </div>
             </div>
@@ -357,7 +357,7 @@
 
     }
 </script>
-<script src="{{ asset('public/assets/admin') }}/js/tags-input.min.js"></script>
+<script src="{{ asset('assets/admin') }}/js/tags-input.min.js"></script>
 
 <script>
     $('#choice_attributes').on('change', function() {

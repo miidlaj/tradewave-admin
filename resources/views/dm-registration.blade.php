@@ -1,7 +1,7 @@
 @extends('layouts.landing.app')
 @section('title', translate('messages.deliveryman_registration'))
 @push('css_or_js')
-    <link rel="stylesheet" href="{{asset('/public/assets/admin/css/intlTelInput.css')}}"/>
+    <link rel="stylesheet" href="{{asset('/assets/admin/css/intlTelInput.css')}}"/>
 @endpush
 
 @section('content')
@@ -170,7 +170,7 @@
                                     <div class="form-group mb-3">
                                         <label class="input-label"
                                             for="exampleFormControlInput1">{{ translate('messages.password') }}  <span class="form-label-secondary" data-toggle="tooltip" data-placement="right"
-        data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span></label>
+        data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span></label>
                                         <input type="text" name="password" class="form-control __form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"
                                         placeholder="{{ translate('messages.password_length_placeholder', ['length' => '8+']) }}"
                                         aria-label="8+ characters required"
@@ -182,7 +182,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group pt-3 mb-5">
                                         <img class="__register-img mb-3" id="viewer"
-                                            src="{{ asset('public/assets/admin/img/400x400/img2.jpg') }}"
+                                            src="{{ asset('assets/admin/img/400x400/img2.jpg') }}"
                                             alt="delivery-man image" />
                                         <label  class="input-label">{{ translate('messages.deliveryman_image') }}<small
                                             class="text-danger">* ( {{ translate('messages.ratio') }} 1:1 )</small></label>
@@ -226,7 +226,7 @@
 @endsection
 
 @push('script_2')
-    {{-- <script src="{{ asset('public/assets/admin') }}/js/toastr.js"></script>
+    {{-- <script src="{{ asset('assets/admin') }}/js/toastr.js"></script>
     {!! Toastr::message() !!} --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"
         integrity="sha512-QMUqEPmhXq1f3DnAVdXvu40C8nbTgxvBGvNruP6RFacy3zWKbNTmx7rdQVVM2gkd2auCWhlPYtcW2tHwzso4SA=="
@@ -273,7 +273,7 @@
         //     $(this).val(phone.getNumber());
         // })
     </script>
-    <script src="{{ asset('public/assets/admin/js/spartan-multi-image-picker.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/spartan-multi-image-picker.js') }}"></script>
     <script type="text/javascript">
         $(function() {
             $("#coba").spartanMultiImagePicker({
@@ -283,7 +283,7 @@
                 groupClassName: 'col-lg-2 col-md-4 col-sm-4 col-6',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: '{{ asset('public/assets/admin/img/400x400/img2.jpg') }}',
+                    image: '{{ asset('assets/admin/img/400x400/img2.jpg') }}',
                     width: '100%'
                 },
                 dropFileLabel: "Drop Here",

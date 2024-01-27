@@ -13,7 +13,7 @@
         <!-- Page Header -->
         <div class="page-header report-page-header">
             <div class="d-flex">
-                <img src="{{ asset('public/assets/admin/img/store-report.svg') }}" class="page-header-icon" alt="">
+                <img src="{{ asset('assets/admin/img/store-report.svg') }}" class="page-header-icon" alt="">
                 <div class="w-0 flex-grow-1 pl-3">
                     <h1 class="page-header-title m-0">
                         {{ translate('Store Wise Report') }}
@@ -118,14 +118,14 @@
         <div class="store-report-content mt-11px">
             <div class="left-content">
                 <div class="left-content-card">
-                    <img src="{{ asset('/public/assets/admin/img/report/cart.svg') }}" alt="">
+                    <img src="{{ asset('/assets/admin/img/report/cart.svg') }}" alt="">
                     <div class="info">
                         <h4 class="subtitle">{{ $orders->total() }}</h4>
                         <h6 class="subtext">{{ translate('messages.Total Order') }}</h6>
                     </div>
                 </div>
                 <div class="left-content-card">
-                    <img src="{{ asset('/public/assets/admin/img/report/total-order.svg') }}" alt="">
+                    <img src="{{ asset('/assets/admin/img/report/total-order.svg') }}" alt="">
                     <div class="info">
                         <h4 class="subtitle">{{ \App\CentralLogics\Helpers::number_format_short($total_order_amount) }}
                         </h4>
@@ -151,7 +151,7 @@
                     </div>
                 </div>
                 <div class="left-content-card">
-                    <img src="{{ asset('/public/assets/admin/img/report/total-discount.svg') }}" alt="">
+                    <img src="{{ asset('/assets/admin/img/report/total-discount.svg') }}" alt="">
                     <div class="info">
                         <h4 class="subtitle">
                             {{ \App\CentralLogics\Helpers::number_format_short($total_coupon_discount + $total_product_discount) }}
@@ -318,13 +318,13 @@
                             {{-- <span class="dropdown-header">{{ translate('messages.options') }}</span>
                         <a id="export-copy" class="dropdown-item" href="javascript:;">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                src="{{ asset('public/assets/admin') }}/svg/illustrations/copy.svg"
+                                src="{{ asset('assets/admin') }}/svg/illustrations/copy.svg"
                                 alt="Image Description">
                             {{ translate('messages.copy') }}
                         </a>
                         <a id="export-print" class="dropdown-item" href="javascript:;">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                src="{{ asset('public/assets/admin') }}/svg/illustrations/print.svg"
+                                src="{{ asset('assets/admin') }}/svg/illustrations/print.svg"
                                 alt="Image Description">
                             {{ translate('messages.print') }}
                         </a>
@@ -333,14 +333,14 @@
                             <a id="export-excel" class="dropdown-item"
                                 href="{{ route('admin.transactions.report.store-order-report-export', ['type' => 'excel', request()->getQueryString()]) }}">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/components/excel.svg"
+                                    src="{{ asset('assets/admin') }}/svg/components/excel.svg"
                                     alt="Image Description">
                                 {{ translate('messages.excel') }}
                             </a>
                             <a id="export-csv" class="dropdown-item"
                                 href="{{ route('admin.transactions.report.store-order-report-export', ['type' => 'csv', request()->getQueryString()]) }}">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/components/placeholder-csv-format.svg"
+                                    src="{{ asset('assets/admin') }}/svg/components/placeholder-csv-format.svg"
                                     alt="Image Description">
                                 .{{ translate('messages.csv') }}
                             </a>
@@ -463,7 +463,7 @@
                 @endif
                 @if (count($orders) === 0)
                     <div class="empty--data">
-                        <img src="{{ asset('/public/assets/admin/svg/illustrations/sorry.svg') }}" alt="public">
+                        <img src="{{ asset('/assets/admin/svg/illustrations/sorry.svg') }}" alt="public">
                         <h5>
                             {{ translate('no_data_found') }}
                         </h5>
@@ -479,15 +479,15 @@
 
 
 @push('script')
-    <script src="{{ asset('public/assets/admin') }}/vendor/chart.js/dist/Chart.min.js"></script>
-    <script src="{{ asset('public/assets/admin') }}/vendor/chart.js.extensions/chartjs-extensions.js"></script>
+    <script src="{{ asset('assets/admin') }}/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="{{ asset('assets/admin') }}/vendor/chart.js.extensions/chartjs-extensions.js"></script>
     <script
-        src="{{ asset('public/assets/admin') }}/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js">
+        src="{{ asset('assets/admin') }}/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js">
     </script>
 
 
     <!-- Apex Charts -->
-    <script src="{{ asset('/public/assets/admin/js/apex-charts/apexcharts.js') }}"></script>
+    <script src="{{ asset('/assets/admin/js/apex-charts/apexcharts.js') }}"></script>
     <!-- Apex Charts -->
 @endpush
 

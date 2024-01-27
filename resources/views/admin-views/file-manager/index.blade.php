@@ -10,7 +10,7 @@
     <div class="page-header d-flex flex-wrap justify-content-between">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('public/assets/admin/img/folder-logo.png')}}" class="w--26" alt="">
+                <img src="{{asset('assets/admin/img/folder-logo.png')}}" class="w--26" alt="">
             </span>
             <span>
                 {{translate('messages.gallery')}}
@@ -46,7 +46,7 @@
                         <div class="col-6 col-sm-auto">
                             @if($file['type']=='folder')
                             <a class="btn p-0 btn--folder"  href="{{route('admin.business-settings.file-manager.index', base64_encode($file['path']))}}">
-                                <img class="img-thumbnail border-0 p-0" src="{{asset('public/assets/admin/img/folder.png')}}" alt="">
+                                <img class="img-thumbnail border-0 p-0" src="{{asset('assets/admin/img/folder.png')}}" alt="">
                                 <p>{{Str::limit($file['name'],10)}}</p>
                             </a>
                             @elseif($file['type']=='file')
@@ -60,13 +60,13 @@
                                 </button>
                                 <div class="btn-items">
                                     <a href="#" title="{{translate('View Image')}}" data-toggle="tooltip" data-placement="left">
-                                        <img src="{{asset('/public/assets/admin/img/download/view.png')}}" data-toggle="modal" data-target="#imagemodal{{$key}}" alt="">
+                                        <img src="{{asset('/assets/admin/img/download/view.png')}}" data-toggle="modal" data-target="#imagemodal{{$key}}" alt="">
                                     </a>
                                     <a href="#" title="{{translate('Copy Link')}}" data-toggle="tooltip" data-placement="left" onclick="copy_test('{{$file['db_path']}}')">
-                                        <img src="{{asset('/public/assets/admin/img/download/link.png')}}" alt="">
+                                        <img src="{{asset('/assets/admin/img/download/link.png')}}" alt="">
                                     </button>
                                     <a title="{{translate('Download')}}" data-toggle="tooltip" data-placement="left" href="{{route('admin.business-settings.file-manager.download', base64_encode($file['path']))}}">
-                                        <img src="{{asset('/public/assets/admin/img/download/download.png')}}" alt="">
+                                        <img src="{{asset('/assets/admin/img/download/download.png')}}" alt="">
                                     </a>
                                     <form action="{{route('admin.business-settings.file-manager.destroy',base64_encode($file['path']))}}" method="post" onsubmit="form_submit_warrning(event)">
                                         @csrf
@@ -150,7 +150,7 @@
                     <div class="text-center mb-3">
                         <h3 class="modal-title mb-3">{{translate('Check how the settings works')}}</h3>
                     </div>
-                    <img src="{{asset('/public/assets/admin/img/zone-instruction.png')}}" alt="admin/img" class="w-100">
+                    <img src="{{asset('/assets/admin/img/zone-instruction.png')}}" alt="admin/img" class="w-100">
                     <div class="mt-3 d-flex flex-wrap align-items-center justify-content-end">
                         <div class="btn--container justify-content-end">
                             <button id="reset_btn" type="reset" class="btn btn--reset" data-dismiss="modal">{{translate("Close")}}</button>

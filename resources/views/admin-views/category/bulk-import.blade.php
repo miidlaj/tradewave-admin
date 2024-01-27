@@ -7,7 +7,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/category.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/category.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('messages.category_bulk_import')}}
@@ -63,8 +63,8 @@
                 <div class="text-center pb-4">
                     <h3 class="mb-3 export--template-title">{{ translate('Download Spreadsheet Template') }}</h3>
                     <div class="btn--container justify-content-center export--template-btns">
-                        <a href="{{asset('public/assets/categories_bulk_format.xlsx')}}" download="" class="btn btn-dark">{{ translate('Template with Existing Data') }}</a>
-                        <a href="{{asset('public/assets/categories_bulk_without_data_format.xlsx')}}" download="" class="btn btn-dark">{{ translate('Template without Data') }}</a>
+                        <a href="{{asset('assets/categories_bulk_format.xlsx')}}" download="" class="btn btn-dark">{{ translate('Template with Existing Data') }}</a>
+                        <a href="{{asset('assets/categories_bulk_without_data_format.xlsx')}}" download="" class="btn btn-dark">{{ translate('Template without Data') }}</a>
                     </div>
                 </div>
             </div>

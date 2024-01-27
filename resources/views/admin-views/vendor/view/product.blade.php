@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('public/assets/admin/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/admin/css/croppie.css')}}" rel="stylesheet">
 
 @endpush
 
@@ -24,7 +24,7 @@
                         <a class="order--card h-100" href="{{route('admin.store.view', ['store'=>$store->id, 'tab'=> 'item'])}}">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                    <img src="{{asset('/public/assets/admin/img/store_items/fi_9752284.png')}}" alt="dashboard" class="oder--card-icon">
+                                    <img src="{{asset('/assets/admin/img/store_items/fi_9752284.png')}}" alt="dashboard" class="oder--card-icon">
                                     <span>{{translate('All_Items')}}</span>
                                 </h6>
                                 <span class="card-title text-success">
@@ -39,7 +39,7 @@
                         <a class="order--card h-100" href="{{route('admin.store.view', ['store'=>$store->id, 'tab'=> 'item' ,'sub_tab' => 'active-items'])}}">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                    <img src="{{asset('/public/assets/admin/img/store_items/fi_10608883.png')}}" alt="dashboard" class="oder--card-icon">
+                                    <img src="{{asset('/assets/admin/img/store_items/fi_10608883.png')}}" alt="dashboard" class="oder--card-icon">
                                     <span>{{translate('messages.Active_Items')}}</span>
                                 </h6>
                                 <span class="card-title text-success">
@@ -53,7 +53,7 @@
                         <a class="order--card h-100" href="{{route('admin.store.view', ['store'=>$store->id, 'tab'=> 'item' ,'sub_tab' => 'inactive-items'])}}">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                    <img src="{{asset('/public/assets/admin/img/store_items/fi_10186054.png')}}" alt="dashboard" class="oder--card-icon">
+                                    <img src="{{asset('/assets/admin/img/store_items/fi_10186054.png')}}" alt="dashboard" class="oder--card-icon">
                                     <span>{{translate('messages.Inactive_Items')}}</span>
                                 </h6>
                                 <span class="card-title text-success">
@@ -67,7 +67,7 @@
                         <a class="order--card h-100" href="{{route('admin.store.view', ['store'=>$store->id, 'tab'=> 'item' ,'sub_tab' => 'pending-items'])}}">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                    <img src="{{asset('/public/assets/admin/img/store_items/fi_5106700.png')}}" alt="dashboard" class="oder--card-icon">
+                                    <img src="{{asset('/assets/admin/img/store_items/fi_5106700.png')}}" alt="dashboard" class="oder--card-icon">
                                     <span>{{translate('messages.Pending_for_Approval')}}</span>
                                 </h6>
                                 <span class="card-title text-success">
@@ -81,7 +81,7 @@
                         <a class="order--card h-100" href="{{route('admin.store.view', ['store'=>$store->id, 'tab'=> 'item' ,'sub_tab' => 'rejected-items'])}}">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                    <img src="{{asset('/public/assets/admin/img/store_items/image 89.png')}}" alt="dashboard" class="oder--card-icon">
+                                    <img src="{{asset('/assets/admin/img/store_items/image 89.png')}}" alt="dashboard" class="oder--card-icon">
                                     <span>{{translate('messages.Rejected_Items')}}</span>
                                 </h6>
                                 <span class="card-title text-success">
@@ -138,13 +138,13 @@
                             <span class="dropdown-header">{{ translate('messages.download_options') }}</span>
                             <a id="export-excel" class="dropdown-item" href="{{route('admin.item.store-item-export', ['type'=>'excel',  'table'=> isset($sub_tab) && ($sub_tab == 'pending-items' || $sub_tab == 'rejected-items') ? 'TempProduct' : null , 'sub_tab'=> $sub_tab ?? null ,'store_id'=>$store->id , request()->getQueryString()])}}">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/components/excel.svg"
+                                    src="{{ asset('assets/admin') }}/svg/components/excel.svg"
                                     alt="Image Description">
                                 {{ translate('messages.excel') }}
                             </a>
                             <a id="export-csv" class="dropdown-item" href="{{route('admin.item.store-item-export', ['type'=>'csv',  'table'=> isset($sub_tab) && ($sub_tab == 'pending-items' || $sub_tab == 'rejected-items') ? 'TempProduct' : null , 'sub_tab'=> $sub_tab ?? null , 'store_id'=>$store->id , request()->getQueryString()])}}">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/components/placeholder-csv-format.svg"
+                                    src="{{ asset('assets/admin') }}/svg/components/placeholder-csv-format.svg"
                                     alt="Image Description">
                                 .{{ translate('messages.csv') }}
                             </a>
@@ -185,8 +185,8 @@
                                     <td>{{$key+$foods->firstItem()}}</td>
                                     <td>
                                         <a class="media align-items-center" href="{{route('admin.item.requested_item_view',['id'=> $food['id']])}}">
-                                            <img class="avatar avatar-lg mr-3" src="{{asset('storage/app/public/product')}}/{{$food['image']}}"
-                                                    onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'" alt="{{$food->name}} image">
+                                            <img class="avatar avatar-lg mr-3" src="{{asset('storage/product')}}/{{$food['image']}}"
+                                                    onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" alt="{{$food->name}} image">
                                             <div class="media-body">
                                                 <h5 class="text-hover-primary mb-0">{{Str::limit($food['name'],20,'...')}}</h5>
                                             </div>
@@ -252,8 +252,8 @@
                                     <td>{{$key+1}}</td>
                                     <td>
                                         <a class="media align-items-center" href="{{route('admin.item.view',[$food['id']])}}">
-                                            <img class="avatar avatar-lg mr-3" src="{{asset('storage/app/public/product')}}/{{$food['image']}}"
-                                                    onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'" alt="{{$food->name}} image">
+                                            <img class="avatar avatar-lg mr-3" src="{{asset('storage/product')}}/{{$food['image']}}"
+                                                    onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" alt="{{$food->name}} image">
                                             <div class="media-body">
                                                 <h5 class="text-hover-primary mb-0">{{Str::limit($food['name'],20,'...')}}</h5>
                                             </div>
@@ -325,7 +325,7 @@
                     </div>
                     @if(count($foods) === 0)
                     <div class="empty--data">
-                        <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                        <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                         <h5>
                             {{translate('no_data_found')}}
                         </h5>

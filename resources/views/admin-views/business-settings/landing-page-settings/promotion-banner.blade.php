@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('public/assets/admin/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/admin/css/croppie.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -13,7 +13,7 @@
     <div class="page-header pb-0">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('public/assets/admin/img/landing.png')}}" class="w--26" alt="">
+                <img src="{{asset('assets/admin/img/landing.png')}}" class="w--26" alt="">
             </span>
             <span>
                 {{ translate('messages.landing_page_settings') }}
@@ -60,7 +60,7 @@
 
                     <center id="image-viewer-section2" class="initial-hidden pt-2">
                         <img class="img--120" id="viewer2"
-                                src="{{asset('public/assets/admin/img/400x400/img2.jpg')}}" alt=""/>
+                                src="{{asset('assets/admin/img/400x400/img2.jpg')}}" alt=""/>
                     </center>
                 </div>
 
@@ -93,8 +93,8 @@
                                 <td>{{$promotion['title']}}</td>
                                 <td>{{$promotion['sub_title']}}</td>
                                 <td>
-                                    <img class="avatar avatar-lg mr-3 w-100" src="{{asset('public/assets/landing/image')}}/{{$promotion['img']}}"
-                                    onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'" alt="{{$promotion['title']}}">
+                                    <img class="avatar avatar-lg mr-3 w-100" src="{{asset('assets/landing/image')}}/{{$promotion['img']}}"
+                                    onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" alt="{{$promotion['title']}}">
                             <div class="media-body">
                                 </td>
                                 <td>
@@ -139,7 +139,7 @@
         });
 
         $('#reset_btn').click(function(){
-            $('#viewer').attr('src','{{asset('public/assets/admin/img/400x400/img2.jpg')}}');
+            $('#viewer').attr('src','{{asset('assets/admin/img/400x400/img2.jpg')}}');
         })
     </script>
 @endpush

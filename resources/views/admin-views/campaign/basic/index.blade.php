@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/campaign.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/campaign.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                     {{translate('messages.Add new campaign')}}
@@ -131,7 +131,7 @@
                                 </label>
                                 <center class="py-3 my-auto">
                                     <img class="initial--4" id="viewer"
-                                         src="{{asset('public/assets/admin/img/900x400/img1.jpg')}}" alt="campaign image"/>
+                                         src="{{asset('assets/admin/img/900x400/img1.jpg')}}" alt="campaign image"/>
                                 </center>
                                 <div class="custom-file">
                                     <input type="file" name="image" id="customFileEg1" class="custom-file-input"
@@ -253,7 +253,7 @@
     <script>
         $('#reset_btn').click(function(){
             $('#module_id').val(null).trigger('change');
-            $('#viewer').attr('src','{{asset('public/assets/admin/img/900x400/img1.jpg')}}');
+            $('#viewer').attr('src','{{asset('assets/admin/img/900x400/img1.jpg')}}');
         })
     </script>
 @endpush

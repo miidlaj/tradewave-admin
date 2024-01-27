@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/parcel.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/parcel.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                     {{translate('messages.parcel_settings')}}
@@ -276,7 +276,7 @@
                         </table>
                         @if(count($instructions) === 0)
                             <div class="empty--data">
-                                <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                                <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                                 <h5>
                                     {{translate('no_data_found')}}
                                 </h5>

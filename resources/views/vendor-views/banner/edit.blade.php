@@ -8,7 +8,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/edit.png')}}" class="w--26" alt="">
+                    <img src="{{asset('assets/admin/img/edit.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                     {{translate('messages.update_banner')}}
@@ -33,7 +33,7 @@
                                             <i class="tio-info-outined"></i>
                                         </div>
                                         <div class="business-notes">
-                                            <h6><img src="{{asset('/public/assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
+                                            <h6><img src="{{asset('/assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
                                             <div>
                                                 {{translate('messages.Customer_will_see_there_banners_in_your_store_details_page_in_website_and_user_apps.')}}
                                             </div>
@@ -55,7 +55,7 @@
                                 <div class="col-sm-6">
                                     <label class="upload-img-3 m-0 d-block">
                                         <div class="img">
-                                            <img src="{{asset('storage/app/public/banner')}}/{{$banner['image']}}" id="viewer" onerror='this.src="{{asset('/public/assets/admin/img/upload-4.png')}}"' class="vertical-img mw-100 vertical" alt="">
+                                            <img src="{{asset('storage/banner')}}/{{$banner['image']}}" id="viewer" onerror='this.src="{{asset('/assets/admin/img/upload-4.png')}}"' class="vertical-img mw-100 vertical" alt="">
                                         </div>
                                             <input type="file" name="image"  hidden>
                                     </label>
@@ -84,7 +84,7 @@
 @push('script_2')
         <script>
             $('#reset_btn').click(function(){
-                $('#viewer').attr('src','{{asset('/public/assets/admin/img/upload-4.png')}}');
+                $('#viewer').attr('src','{{asset('/assets/admin/img/upload-4.png')}}');
             })
         </script>
         <script>

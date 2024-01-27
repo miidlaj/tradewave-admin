@@ -3,7 +3,7 @@
 @section('title',translate('messages.business_modules'))
 
 @push('css_or_js')
-<link rel="stylesheet" href="{{asset('public/assets/admin/css/radio-image.css')}}">
+<link rel="stylesheet" href="{{asset('assets/admin/css/radio-image.css')}}">
 
 @endpush
 
@@ -13,7 +13,7 @@
     <div class="page-header">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('/public/assets/admin/img/module.png')}}" alt="">
+                <img src="{{asset('/assets/admin/img/module.png')}}" alt="">
             </span>
             <span>
                 {{translate('Add_New_Business_Module')}}
@@ -25,7 +25,7 @@
                 <div class="blinkings active">
                     <i class="tio-info-outined"></i>
                     <div class="business-notes">
-                        <h6><img src="{{asset('/public/assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
+                        <h6><img src="{{asset('/assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
                         <div>
                         {{translate('messages.Don’t_forget_to_click_the_‘Add_Module’_button_below_to_save_the_new_business_module.')}}
                         </div>
@@ -69,7 +69,7 @@
                         <label class="input-label d-flex" for="module_type">{{ translate('Business_Module_description')}} ({{ translate('messages.default') }})<span class="form-label-secondary text-danger d-flex"
                             data-toggle="tooltip" data-placement="right"
                             data-original-title="{{ translate('messages.Write_a_short_description_of_your_new_business_module_within_100_words_(550_characters)') }}"><img
-                                src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                 alt="{{ translate('messages.veg_non_veg') }}"></span></label>
                         <textarea class="ckeditor form-control" name="description[]"></textarea>
                     </div>
@@ -86,7 +86,7 @@
                         <label class="input-label d-flex" for="module_type">{{ translate('Business_Module_description')}} ({{strtoupper($lang)}})<span class="form-label-secondary text-danger d-flex"
                             data-toggle="tooltip" data-placement="right"
                             data-original-title="{{ translate('messages.Write_a_short_description_of_your_new_business_module_within_100_words_(550_characters)')}}"><img
-                                src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                 alt="{{ translate('messages.veg_non_veg') }}"></span></label>
                         <textarea class="ckeditor form-control" name="description[]"></textarea>
                     </div>
@@ -133,7 +133,7 @@
                                         <small class="text-danger">* ( {{translate('messages.ratio')}} 1:1)</small>
                                     </label>
                                     <center class="my-auto py-3">
-                                        <img class="initial--15" id="viewer" src="{{asset('public/assets/admin/img/400x400/img2.jpg')}}" alt="image" />
+                                        <img class="initial--15" id="viewer" src="{{asset('assets/admin/img/400x400/img2.jpg')}}" alt="image" />
                                     </center>
                                     <div class="custom-file">
                                         <input type="file" name="icon" id="customFileEg1" class="custom-file-input" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" required>
@@ -148,7 +148,7 @@
                                         <small class="text-danger">* ( {{translate('messages.ratio')}} 1:1)</small>
                                     </label>
                                     <center class="my-auto py-3">
-                                        <img class="initial--15" id="viewer2" src="{{asset('public/assets/admin/img/400x400/img2.jpg')}}" alt="image" />
+                                        <img class="initial--15" id="viewer2" src="{{asset('assets/admin/img/400x400/img2.jpg')}}" alt="image" />
                                     </center>
                                     <div class="custom-file">
                                         <input type="file" name="thumbnail" id="customFileEg2" class="custom-file-input" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" required>
@@ -246,8 +246,8 @@
 </script>
 <script>
         $('#reset_btn').click(function(){
-            $('#viewer').attr('src','{{asset('public/assets/admin/img/400x400/img2.jpg')}}');
-            $('#viewer2').attr('src','{{asset('public/assets/admin/img/400x400/img2.jpg')}}');
+            $('#viewer').attr('src','{{asset('assets/admin/img/400x400/img2.jpg')}}');
+            $('#viewer2').attr('src','{{asset('assets/admin/img/400x400/img2.jpg')}}');
         })
 </script>
 @endpush

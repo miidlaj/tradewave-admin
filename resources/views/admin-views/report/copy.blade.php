@@ -13,7 +13,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/item-report.png')}}" class="w--22" alt="">
+                    <img src="{{asset('assets/admin/img/item-report.png')}}" class="w--22" alt="">
                 </span>
                 <span>
                     {{translate('messages.item_report')}}
@@ -94,7 +94,7 @@
             <div class="row g-4">
                 <div class="col-lg-3">
                     <a class="__card-1 h-100" href="#">
-                        <img src="{{asset('/public/assets/admin/img/report/new/total.png')}}" class="icon" alt="report/new">
+                        <img src="{{asset('/assets/admin/img/report/new/total.png')}}" class="icon" alt="report/new">
                         <h3 class="title">2,000</h3>
                         <h6 class="subtitle">Total Order</h6>
                     </a>
@@ -105,42 +105,42 @@
                             <a class="__card-2 __bg-1" href="#">
                             <h4 class="title">36</h4>
                             <span class="subtitle">In Progress Orders</span>
-                            <img src="{{asset('/public/assets/admin/img/report/new/total.png')}}" alt="report/new" class="card-icon">
+                            <img src="{{asset('/assets/admin/img/report/new/total.png')}}" alt="report/new" class="card-icon">
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <a class="__card-2 __bg-2" href="#">
                             <h4 class="title">36</h4>
                             <span class="subtitle">On the Way</span>
-                            <img src="{{asset('/public/assets/admin/img/report/new/on-the-way.png')}}" alt="report/new" class="card-icon">
+                            <img src="{{asset('/assets/admin/img/report/new/on-the-way.png')}}" alt="report/new" class="card-icon">
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <a class="__card-2 __bg-3" href="#">
                             <h4 class="title">36</h4>
                             <span class="subtitle">Delivered Orders</span>
-                            <img src="{{asset('/public/assets/admin/img/report/new/delivered.png')}}" alt="report/new" class="card-icon">
+                            <img src="{{asset('/assets/admin/img/report/new/delivered.png')}}" alt="report/new" class="card-icon">
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <a class="__card-2 __bg-4" href="#">
                             <h4 class="title">36</h4>
                             <span class="subtitle">Failed Orders</span>
-                            <img src="{{asset('/public/assets/admin/img/report/new/failed.png')}}" alt="report/new" class="card-icon">
+                            <img src="{{asset('/assets/admin/img/report/new/failed.png')}}" alt="report/new" class="card-icon">
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <a class="__card-2 __bg-5" href="#">
                             <h4 class="title">36</h4>
                             <span class="subtitle">Refunded Orders</span>
-                            <img src="{{asset('/public/assets/admin/img/report/new/refunded.png')}}" alt="report/new" class="card-icon">
+                            <img src="{{asset('/assets/admin/img/report/new/refunded.png')}}" alt="report/new" class="card-icon">
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <a class="__card-2 __bg-6" href="#">
                             <h4 class="title">36</h4>
                             <span class="subtitle">Canceled Orders</span>
-                            <img src="{{asset('/public/assets/admin/img/report/new/canceled.png')}}" alt="report/new" class="card-icon">
+                            <img src="{{asset('/assets/admin/img/report/new/canceled.png')}}" alt="report/new" class="card-icon">
                             </a>
                         </div>
                     </div>
@@ -153,31 +153,31 @@
                     <div class="row g-2">
                         <div class="col-sm-4">
                             <a class="__card-3 h-100" href="#">
-                                <img src="{{asset('/public/assets/admin/img/report/new/trx1.png')}}" class="icon" alt="report/new">
+                                <img src="{{asset('/assets/admin/img/report/new/trx1.png')}}" class="icon" alt="report/new">
                                 <h3 class="title text-008958">$2,000</h3>
                                 <h6 class="subtitle">Completed Transaction</h6>
                                 <div class="info-icon" data-toggle="tooltip" data-placement="top" data-original-title="This is dummy information text for report card">
-                                    <img src="{{asset('/public/assets/admin/img/report/new/info1.png')}}" alt="report/new">
+                                    <img src="{{asset('/assets/admin/img/report/new/info1.png')}}" alt="report/new">
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-4">
                             <a class="__card-3 h-100" href="#">
-                                <img src="{{asset('/public/assets/admin/img/report/new/trx2.png')}}" class="icon" alt="report/new">
+                                <img src="{{asset('/assets/admin/img/report/new/trx2.png')}}" class="icon" alt="report/new">
                                 <h3 class="title text-006AB4">$2,000</h3>
                                 <h6 class="subtitle">On-Hold Transactions</h6>
                                 <div class="info-icon" data-toggle="tooltip" data-placement="top" data-original-title="This is dummy information text for report card">
-                                    <img src="{{asset('/public/assets/admin/img/report/new/info2.png')}}" alt="report/new">
+                                    <img src="{{asset('/assets/admin/img/report/new/info2.png')}}" alt="report/new">
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-4">
                             <a class="__card-3 h-100" href="#">
-                                <img src="{{asset('/public/assets/admin/img/report/new/trx3.png')}}" class="icon" alt="report/new">
+                                <img src="{{asset('/assets/admin/img/report/new/trx3.png')}}" class="icon" alt="report/new">
                                 <h3 class="title text-FF5A54">$2,000</h3>
                                 <h6 class="subtitle">Canceled Transactions</h6>
                                 <div class="info-icon" data-toggle="tooltip" data-placement="top" data-original-title="This is dummy information text for report card">
-                                    <img src="{{asset('/public/assets/admin/img/report/new/info3.png')}}" alt="report/new">
+                                    <img src="{{asset('/assets/admin/img/report/new/info3.png')}}" alt="report/new">
                                 </div>
                             </a>
                         </div>
@@ -188,10 +188,10 @@
                         <div class="col-md-12">
                             <div class="__card-vertical">
                                 <div class="__card-vertical-img">
-                                    <img class="img" src="{{asset('/public/assets/admin/img/report/new/admin-earning.png')}}" alt="">
+                                    <img class="img" src="{{asset('/assets/admin/img/report/new/admin-earning.png')}}" alt="">
                                     <h4 class="name">Admin Earning</h4>
                                     <div class="info-icon" data-toggle="tooltip" data-placement="right" data-original-title="This is dummy information text for report card">
-                                        <img src="{{asset('/public/assets/admin/img/report/new/info1.png')}}" alt="report/new">
+                                        <img src="{{asset('/assets/admin/img/report/new/info1.png')}}" alt="report/new">
                                     </div>
                                 </div>
                                 <h4 class="earning text-0661CB"><small>$</small> 345</h4>
@@ -200,10 +200,10 @@
                         <div class="col-md-12">
                             <div class="__card-vertical">
                                 <div class="__card-vertical-img">
-                                    <img class="img" src="{{asset('/public/assets/admin/img/report/new/store-earning.png')}}" alt="">
+                                    <img class="img" src="{{asset('/assets/admin/img/report/new/store-earning.png')}}" alt="">
                                     <h4 class="name">Store Earning</h4>
                                     <div class="info-icon" data-toggle="tooltip" data-placement="right" data-original-title="This is dummy information text for report card">
-                                        <img src="{{asset('/public/assets/admin/img/report/new/info2.png')}}" alt="report/new">
+                                        <img src="{{asset('/assets/admin/img/report/new/info2.png')}}" alt="report/new">
                                     </div>
                                 </div>
                                 <h4 class="earning text-00AA6D"><small>$</small> 345</h4>
@@ -212,10 +212,10 @@
                         <div class="col-md-12">
                             <div class="__card-vertical">
                                 <div class="__card-vertical-img">
-                                    <img class="img" src="{{asset('/public/assets/admin/img/report/new/deliveryman-earning.png')}}" alt="">
+                                    <img class="img" src="{{asset('/assets/admin/img/report/new/deliveryman-earning.png')}}" alt="">
                                     <h4 class="name">Deliveryman Earning</h4>
                                     <div class="info-icon" data-toggle="tooltip" data-placement="right" data-original-title="This is dummy information text for report card">
-                                        <img src="{{asset('/public/assets/admin/img/report/new/info3.png')}}" alt="report/new">
+                                        <img src="{{asset('/assets/admin/img/report/new/info3.png')}}" alt="report/new">
                                     </div>
                                 </div>
                                 <h4 class="earning text-FF7500"><small>$</small> 345</h4>
@@ -256,13 +256,13 @@
                             {{-- <span class="dropdown-header">{{ translate('messages.options') }}</span>
                             <a id="export-copy" class="dropdown-item" href="javascript:;">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/illustrations/copy.svg"
+                                    src="{{ asset('assets/admin') }}/svg/illustrations/copy.svg"
                                     alt="Image Description">
                                 {{ translate('messages.copy') }}
                             </a>
                             <a id="export-print" class="dropdown-item" href="javascript:;">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/illustrations/print.svg"
+                                    src="{{ asset('assets/admin') }}/svg/illustrations/print.svg"
                                     alt="Image Description">
                                 {{ translate('messages.print') }}
                             </a>
@@ -270,19 +270,19 @@
                             <span class="dropdown-header">{{ translate('messages.download_options') }}</span>
                             <a id="export-excel" class="dropdown-item" href="{{route('admin.report.item-wise-export', ['type'=>'excel',request()->getQueryString()])}}">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/components/excel.svg"
+                                    src="{{ asset('assets/admin') }}/svg/components/excel.svg"
                                     alt="Image Description">
                                 {{ translate('messages.excel') }}
                             </a>
                             <a id="export-csv" class="dropdown-item" href="{{route('admin.report.item-wise-export', ['type'=>'csv',request()->getQueryString()])}}">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/components/placeholder-csv-format.svg"
+                                    src="{{ asset('assets/admin') }}/svg/components/placeholder-csv-format.svg"
                                     alt="Image Description">
                                 .{{ translate('messages.csv') }}
                             </a>
                             {{-- <a id="export-pdf" class="dropdown-item" href="javascript:;">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{ asset('public/assets/admin') }}/svg/components/pdf.svg"
+                                    src="{{ asset('assets/admin') }}/svg/components/pdf.svg"
                                     alt="Image Description">
                                 {{ translate('messages.pdf') }}
                             </a> --}}

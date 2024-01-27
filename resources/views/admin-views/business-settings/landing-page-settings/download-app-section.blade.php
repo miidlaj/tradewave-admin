@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('public/assets/admin/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/admin/css/croppie.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -13,7 +13,7 @@
     <div class="page-header pb-0">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('public/assets/admin/img/landing.png')}}" class="w--26" alt="">
+                <img src="{{asset('assets/admin/img/landing.png')}}" class="w--26" alt="">
             </span>
             <span>
                 {{ translate('messages.landing_page_settings') }}
@@ -59,8 +59,8 @@
                                     </div>
 
                                     <center id="image-viewer-section" class="pt-4">
-                                        <img class="img--200 border" id="viewer" src="{{asset('public/assets/landing')}}/image/{{isset($download_app_section['img'])?$download_app_section['img']:'double_screen_image.png'}}"
-                                                onerror="this.src='{{asset('public/assets/admin/img/400x400/img2.jpg')}}'"
+                                        <img class="img--200 border" id="viewer" src="{{asset('assets/landing')}}/image/{{isset($download_app_section['img'])?$download_app_section['img']:'double_screen_image.png'}}"
+                                                onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'"
                                                 alt=""/>
                                     </center>
                                 </div>
@@ -151,7 +151,7 @@
                            </table>
                            @if(!$button )
                            <div class="empty--data">
-                               <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                               <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                                <h5>
                                    {{translate('no_data_found')}}
                                </h5>

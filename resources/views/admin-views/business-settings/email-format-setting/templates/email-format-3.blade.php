@@ -16,8 +16,8 @@ $company_name = App\Models\BusinessSetting::where('key', 'business_name')->first
                             <td class="p-10">
                                 <span class="d-block text-center">
                                     @php($restaurant_logo = \App\Models\BusinessSetting::where(['key' => 'logo'])->first()->value)
-                                    <img class="mb-2 mail-img-2" onerror="this.src='{{ asset('storage/app/public/business/' . $restaurant_logo) }}'"
-                                    src="{{ asset('storage/app/public/email_template/') }}/{{ $data['logo']??'' }}" id="logoViewer" alt="">
+                                    <img class="mb-2 mail-img-2" onerror="this.src='{{ asset('storage/business/' . $restaurant_logo) }}'"
+                                    src="{{ asset('storage/email_template/') }}/{{ $data['logo']??'' }}" id="logoViewer" alt="">
                                     <h3 class="mb-3 mt-0">{{ translate('Order_Info') }}</h3>
                                 </span>
                             </td>
@@ -149,19 +149,19 @@ $company_name = App\Models\BusinessSetting::where('key', 'business_name')->first
             </span>
                 <span class="social" style="text-align:center">
                     <a href="" id="facebook-check" style="margin: 0 5px;text-decoration:none;{{ (isset($data['facebook']) && $data['facebook'] == 1)?'':'display:none;' }}">
-                        <img src="{{asset('/public/assets/admin/img/img/facebook.png')}}" alt="">
+                        <img src="{{asset('/assets/admin/img/img/facebook.png')}}" alt="">
                     </a>
                     <a href="" id="instagram-check" style="margin: 0 5px;text-decoration:none;{{ (isset($data['instagram']) && $data['instagram'] == 1)?'':'display:none;' }}">
-                        <img src="{{asset('/public/assets/admin/img/img/instagram.png')}}" alt="">
+                        <img src="{{asset('/assets/admin/img/img/instagram.png')}}" alt="">
                     </a>
                     <a href="" id="twitter-check" style="margin: 0 5px;text-decoration:none;{{ (isset($data['twitter']) && $data['twitter'] == 1)?'':'display:none;' }}">
-                        <img src="{{asset('/public/assets/admin/img/img/twitter.png')}}" alt="">
+                        <img src="{{asset('/assets/admin/img/img/twitter.png')}}" alt="">
                     </a>
                     <a href="" id="linkedin-check" style="margin: 0 5px;text-decoration:none;{{ (isset($data['linkedin']) && $data['linkedin'] == 1)?'':'display:none;' }}">
-                        <img src="{{asset('/public/assets/admin/img/img/linkedin.png')}}" alt="">
+                        <img src="{{asset('/assets/admin/img/img/linkedin.png')}}" alt="">
                     </a>
                     <a href="" id="pinterest-check" style="margin: 0 5px;text-decoration:none;{{ (isset($data['pinterest']) && $data['pinterest'] == 1)?'':'display:none;' }}">
-                        <img src="{{asset('/public/assets/admin/img/img/pinterest.png')}}" alt="">
+                        <img src="{{asset('/assets/admin/img/img/pinterest.png')}}" alt="">
                     </a>
                 </span>
                 <span class="copyright" id="mail-copyright">

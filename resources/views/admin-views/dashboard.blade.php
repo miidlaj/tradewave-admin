@@ -14,7 +14,7 @@
             <div class="row align-items-center py-2">
                 <div class="col-sm mb-2 mb-sm-0">
                     <div class="d-flex align-items-center">
-                        <img src="{{asset('/public/assets/admin/img/grocery.svg')}}" alt="img">
+                        <img src="{{asset('/assets/admin/img/grocery.svg')}}" alt="img">
                         <div class="w-0 flex-grow pl-2">
                             <h1 class="page-header-title mb-0">{{translate('messages.welcome')}}, {{auth('admin')->user()->f_name}}.</h1>
                             <p class="page-header-text m-0">{{translate('messages.welcome_message')}}</p>
@@ -62,7 +62,7 @@
                 <div class="row g-2" id="order_stats">
                     <div class="col-sm-6 col-lg-3">
                         <div class="__dashboard-card-2">
-                            <img src="{{asset('/public/assets/admin/img/dashboard/food/items.svg')}}" alt="dashboard/grocery">
+                            <img src="{{asset('/assets/admin/img/dashboard/food/items.svg')}}" alt="dashboard/grocery">
                             <h6 class="name">Items</h6>
                             <h3 class="count">33,451</h3>
                             <div class="subtxt">12 newly added</div>
@@ -70,7 +70,7 @@
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="__dashboard-card-2">
-                            <img src="{{asset('/public/assets/admin/img/dashboard/food/orders.svg')}}" alt="dashboard/grocery">
+                            <img src="{{asset('/assets/admin/img/dashboard/food/orders.svg')}}" alt="dashboard/grocery">
                             <h6 class="name">Orders</h6>
                             <h3 class="count">30M+</h3>
                             <div class="subtxt">12 newly added</div>
@@ -78,7 +78,7 @@
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="__dashboard-card-2">
-                            <img src="{{asset('/public/assets/admin/img/dashboard/food/stores.svg')}}" alt="dashboard/grocery">
+                            <img src="{{asset('/assets/admin/img/dashboard/food/stores.svg')}}" alt="dashboard/grocery">
                             <h6 class="name">Grocery Stores</h6>
                             <h3 class="count">556</h3>
                             <div class="subtxt">12 newly added</div>
@@ -86,7 +86,7 @@
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="__dashboard-card-2">
-                            <img src="{{asset('/public/assets/admin/img/dashboard/food/customers.svg')}}" alt="dashboard/grocery">
+                            <img src="{{asset('/assets/admin/img/dashboard/food/customers.svg')}}" alt="dashboard/grocery">
                             <h6 class="name">Customers</h6>
                             <h3 class="count">1M+</h3>
                             <div class="subtxt">566 newly added</div>
@@ -98,7 +98,7 @@
                                 <a class="order--card h-100" href="{{route('admin.order.list',['delivered'])}}">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                            <img src="{{asset('/public/assets/admin/img/dashboard/food/unassigned.svg')}}" alt="dashboard" class="oder--card-icon">
+                                            <img src="{{asset('/assets/admin/img/dashboard/food/unassigned.svg')}}" alt="dashboard" class="oder--card-icon">
                                             <span>{{translate('messages.unassigned_orders')}}</span>
                                         </h6>
                                         <span class="card-title text-3F8CE8">
@@ -112,7 +112,7 @@
                                 <a class="order--card h-100" href="{{route('admin.order.list',['refunded'])}}">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                            <img src="{{asset('/public/assets/admin/img/dashboard/food/accepted.svg')}}" alt="dashboard" class="oder--card-icon">
+                                            <img src="{{asset('/assets/admin/img/dashboard/food/accepted.svg')}}" alt="dashboard" class="oder--card-icon">
                                             <span>{{translate('Accepted by Delivery Man')}}</span>
                                         </h6>
                                         <span class="card-title text-success">
@@ -125,7 +125,7 @@
                                 <a class="order--card h-100" href="{{route('admin.order.list',['canceled'])}}">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                            <img src="{{asset('/public/assets/admin/img/dashboard/food/packaging.svg')}}" alt="dashboard" class="oder--card-icon">
+                                            <img src="{{asset('/assets/admin/img/dashboard/food/packaging.svg')}}" alt="dashboard" class="oder--card-icon">
                                             <span>{{translate('Packaging')}}</span>
                                         </h6>
                                         <span class="card-title text-FFA800">
@@ -139,7 +139,7 @@
                                 <a class="order--card h-100" href="{{route('admin.order.list',['failed'])}}">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                            <img src="{{asset('/public/assets/admin/img/dashboard/food/out-for.svg')}}" alt="dashboard" class="oder--card-icon">
+                                            <img src="{{asset('/assets/admin/img/dashboard/food/out-for.svg')}}" alt="dashboard" class="oder--card-icon">
                                             <span>{{translate('Out for Delivery')}}</span>
                                         </h6>
                                         <span class="card-title text-success">
@@ -153,7 +153,7 @@
                                 <a class="order--card h-100" href="{{route('admin.order.list',['delivered'])}}">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                            <img src="{{asset('/public/assets/admin/img/dashboard/grocery/delivered.svg')}}" alt="dashboard" class="oder--card-icon">
+                                            <img src="{{asset('/assets/admin/img/dashboard/grocery/delivered.svg')}}" alt="dashboard" class="oder--card-icon">
                                             <span>{{translate('messages.delivered')}}</span>
                                         </h6>
                                         <span class="card-title text-success">
@@ -167,7 +167,7 @@
                                 <a class="order--card h-100" href="{{route('admin.order.list',['canceled'])}}">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                            <img src="{{asset('/public/assets/admin/img/order-status/canceled.svg')}}" alt="dashboard" class="oder--card-icon">
+                                            <img src="{{asset('/assets/admin/img/order-status/canceled.svg')}}" alt="dashboard" class="oder--card-icon">
                                             <span>{{translate('messages.canceled')}}</span>
                                         </h6>
                                         <span class="card-title text-danger">
@@ -181,7 +181,7 @@
                                 <a class="order--card h-100" href="{{route('admin.order.list',['refunded'])}}">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                            <img src="{{asset('/public/assets/admin/img/order-status/refunded.svg')}}" alt="dashboard" class="oder--card-icon">
+                                            <img src="{{asset('/assets/admin/img/order-status/refunded.svg')}}" alt="dashboard" class="oder--card-icon">
                                             <span>{{translate('messages.refunded')}}</span>
                                         </h6>
                                         <span class="card-title text-danger">
@@ -195,7 +195,7 @@
                                 <a class="order--card h-100" href="{{route('admin.order.list',['failed'])}}">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                            <img src="{{asset('/public/assets/admin/img/order-status/payment-failed.svg')}}" alt="dashboard" class="oder--card-icon">
+                                            <img src="{{asset('/assets/admin/img/order-status/payment-failed.svg')}}" alt="dashboard" class="oder--card-icon">
                                             <span>{{translate('messages.payment_failed')}}</span>
                                         </h6>
                                         <span class="card-title text-danger">
@@ -377,12 +377,12 @@
 @endsection
 
 @push('script')
-    <script src="{{asset('public/assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
-    <script src="{{asset('public/assets/admin')}}/vendor/chart.js.extensions/chartjs-extensions.js"></script>
-    <script src="{{asset('public/assets/admin')}}/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script src="{{asset('assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="{{asset('assets/admin')}}/vendor/chart.js.extensions/chartjs-extensions.js"></script>
+    <script src="{{asset('assets/admin')}}/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
 
     <!-- Apex Charts -->
-    <script src="{{asset('/public/assets/admin/js/apex-charts/apexcharts.js')}}"></script>
+    <script src="{{asset('/assets/admin/js/apex-charts/apexcharts.js')}}"></script>
     <!-- Apex Charts -->
 
 @endpush
