@@ -28,6 +28,11 @@ use App\Http\Controllers\SslCommerzPaymentController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// for linking storage
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link');
+    return "Storage linked!!";
+});
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('lang/{locale}', 'HomeController@lang')->name('lang');
