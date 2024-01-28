@@ -30,8 +30,8 @@ use App\Http\Controllers\SslCommerzPaymentController;
 */
 // for linking storage
 Route::get('/linkstorage', function () {
-    Artisan::call('storage:link');
-    return "Storage linked!!";
+    $exitCode = Artisan::call('storage:link', [] );
+    return $exitCode; // 0 exit code for no errors.
 });
 
 Route::get('/', 'HomeController@index')->name('home');
