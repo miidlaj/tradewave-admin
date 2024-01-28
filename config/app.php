@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://newtoktech.com'),
+    'url' => env('APP_URL', 'https://meet.newtoktech.com'),
 
     'asset_url' => env('ASSET_URL', null),
 
