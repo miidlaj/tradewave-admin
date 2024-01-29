@@ -7,6 +7,7 @@ use App\Traits\AddonHelper;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Config;
 use App\CentralLogics\Helpers;
+use Illuminate\Support\Facades\URL;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -31,6 +32,11 @@ class AppServiceProvider extends ServiceProvider
         
         try
         {
+
+            if(env('APP_ENV') !== 'local') {
+                URL::forceScheme('https');
+            }
+
             Config::set('addon_admin_routes',$this->get_addon_admin_routes());
             Config::set('get_payment_publish_status',$this->get_payment_publish_status());
             Paginator::useBootstrap();

@@ -56,6 +56,7 @@
                 <form class="" action="{{route('login_post')}}" method="post" id="form-id">
                     @csrf
                     <input type="hidden" name="role" value="{{  $role ?? null }}">
+
                     <div class="auth-header">
                         <div class="mb-5">
                             <h2 class="title">{{ translate($role) }} {{translate('messages.signin')}}</h2>

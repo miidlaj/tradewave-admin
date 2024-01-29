@@ -3567,4 +3567,8 @@
   'If_enabled_Customers_will_be_able_to_select_COD_as_a_payment_method_during_checkout' => 'If enabled Customers will be able to select COD as a payment method during checkout',
   'If_enabled_Customers_will_be_able_to_select_digital_payment_as_a_payment_method_during_checkout' => 'If enabled Customers will be able to select digital payment as a payment method during checkout',
   'If_enabled_Customers_will_be_able_to_select_offline_payment_as_a_payment_method_during_checkout' => 'If enabled Customers will be able to select offline payment as a payment method during checkout',
+  'ReCAPTCHA Failed' => 'ReCAPTCHA Failed',
+  'license_code_is_required' => 'License code is required',
+  'doamain_is_required' => 'Doamain is required',
+  'react_data_updated' => 'React data updated',
 );

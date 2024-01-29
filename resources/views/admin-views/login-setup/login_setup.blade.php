@@ -33,6 +33,7 @@
             <h5 class="card-title mb-3 pt-3">
                 <span class="card-header-icon mr-2"><i class="tio-settings-outlined"></i></span> <span>{{ translate('Admin_login_page') }}</span>
             </h5>
+            
             <div class="card">
                 <div class="card-body">
                     <div class="row g-3">
@@ -73,6 +74,7 @@
             <h5 class="card-title mb-3 pt-3">
                 <span class="card-header-icon mr-2"><i class="tio-settings-outlined"></i></span> <span>{{ translate('admin_employee_login_page') }}</span>
             </h5>
+            
             <div class="card">
                 <div class="card-body">
                     <div class="row g-3">
@@ -114,6 +116,7 @@
             <h5 class="card-title mb-3 pt-3">
                 <span class="card-header-icon mr-2"><i class="tio-settings-outlined"></i></span> <span>{{ translate('store_login_page') }}</span>
             </h5>
+
             <div class="card">
                 <div class="card-body">
                     <div class="row g-3">
@@ -154,6 +157,8 @@
             <h5 class="card-title mb-3 pt-3">
                 <span class="card-header-icon mr-2"><i class="tio-settings-outlined"></i></span> <span>{{ translate('store_employee_login_page') }}</span>
             </h5>
+
+
             <div class="card">
                 <div class="card-body">
                     <div class="row g-3">
